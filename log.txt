@@ -1,0 +1,4334 @@
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Start program
+
+In int main(): 
+	line 40: "Log file opened"
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 49):
+Stack [0xBAADF00D] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          BAADF00D
+Size:             -1163005939
+Capacity:         -1163005939
+DeadInside:       1
+StackHashSum:     0
+StructHashSum:    0
+
+	line 178: counted "errcode" = 7
+
+
+In int LogError(FILE*, int): 
+---------------------------------------------------------
+| "CAPACITY ERROR: Stack Capacity has a Negative Value" |
+---------------------------------------------------------
+
+---------- EMERGENCY FINISH DUMP ----------
+
+
+line 51: "Stk1 initialized"
+
+
+line 55: "Stk1 created"
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             1
+Capacity:         10
+DeadInside:       0
+StackHashSum:     2042460287
+StructHashSum:    31950294
+
+{
+	 data[0] = 00000000 = 0
+	 data[1] = 00000000 = 0
+	 data[2] = 00000000 = 0
+	 data[3] = 00000000 = 0
+	 data[4] = 00000000 = 0
+	 data[5] = 00000000 = 0
+	 data[6] = 00000000 = 0
+	 data[7] = 00000000 = 0
+	 data[8] = 00000000 = 0
+	 data[9] = 00000000 = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             11
+Capacity:         20
+DeadInside:       0
+StackHashSum:     -794919078
+StructHashSum:    657119562
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = BAADF00D = 0
+	 data[12] = BAADF00D = 0
+	 data[13] = BAADF00D = 0
+	 data[14] = BAADF00D = 0
+	 data[15] = BAADF00D = 0
+	 data[16] = BAADF00D = 0
+	 data[17] = BAADF00D = 0
+	 data[18] = BAADF00D = 0
+	 data[19] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             21
+Capacity:         40
+DeadInside:       0
+StackHashSum:     -922108163
+StructHashSum:    -538777268
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = BAADF00D = 0
+	 data[22] = BAADF00D = 0
+	 data[23] = BAADF00D = 0
+	 data[24] = BAADF00D = 0
+	 data[25] = BAADF00D = 0
+	 data[26] = BAADF00D = 0
+	 data[27] = BAADF00D = 0
+	 data[28] = BAADF00D = 0
+	 data[29] = BAADF00D = 0
+	 data[30] = BAADF00D = 0
+	 data[31] = BAADF00D = 0
+	 data[32] = BAADF00D = 0
+	 data[33] = BAADF00D = 0
+	 data[34] = BAADF00D = 0
+	 data[35] = BAADF00D = 0
+	 data[36] = BAADF00D = 0
+	 data[37] = BAADF00D = 0
+	 data[38] = BAADF00D = 0
+	 data[39] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             31
+Capacity:         40
+DeadInside:       0
+StackHashSum:     890008244
+StructHashSum:    1944501143
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = 0000001D = 0
+	 data[30] = 0000001E = 0
+	 data[31] = BAADF00D = 0
+	 data[32] = BAADF00D = 0
+	 data[33] = BAADF00D = 0
+	 data[34] = BAADF00D = 0
+	 data[35] = BAADF00D = 0
+	 data[36] = BAADF00D = 0
+	 data[37] = BAADF00D = 0
+	 data[38] = BAADF00D = 0
+	 data[39] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             41
+Capacity:         80
+DeadInside:       0
+StackHashSum:     -850147345
+StructHashSum:    -1092128508
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = 0000001D = 0
+	 data[30] = 0000001E = 0
+	 data[31] = 0000001F = 0
+	 data[32] = 00000020 = 0
+	 data[33] = 00000021 = 0
+	 data[34] = 00000022 = 0
+	 data[35] = 00000023 = 0
+	 data[36] = 00000024 = 0
+	 data[37] = 00000025 = 0
+	 data[38] = 00000026 = 0
+	 data[39] = 00000027 = 0
+	 data[40] = 00000028 = 0
+	 data[41] = BAADF00D = 0
+	 data[42] = BAADF00D = 0
+	 data[43] = BAADF00D = 0
+	 data[44] = BAADF00D = 0
+	 data[45] = BAADF00D = 0
+	 data[46] = BAADF00D = 0
+	 data[47] = BAADF00D = 0
+	 data[48] = BAADF00D = 0
+	 data[49] = BAADF00D = 0
+	 data[50] = BAADF00D = 0
+	 data[51] = BAADF00D = 0
+	 data[52] = BAADF00D = 0
+	 data[53] = BAADF00D = 0
+	 data[54] = BAADF00D = 0
+	 data[55] = BAADF00D = 0
+	 data[56] = BAADF00D = 0
+	 data[57] = BAADF00D = 0
+	 data[58] = BAADF00D = 0
+	 data[59] = BAADF00D = 0
+	 data[60] = BAADF00D = 0
+	 data[61] = BAADF00D = 0
+	 data[62] = BAADF00D = 0
+	 data[63] = BAADF00D = 0
+	 data[64] = BAADF00D = 0
+	 data[65] = BAADF00D = 0
+	 data[66] = BAADF00D = 0
+	 data[67] = BAADF00D = 0
+	 data[68] = BAADF00D = 0
+	 data[69] = BAADF00D = 0
+	 data[70] = BAADF00D = 0
+	 data[71] = BAADF00D = 0
+	 data[72] = BAADF00D = 0
+	 data[73] = BAADF00D = 0
+	 data[74] = BAADF00D = 0
+	 data[75] = BAADF00D = 0
+	 data[76] = BAADF00D = 0
+	 data[77] = BAADF00D = 0
+	 data[78] = BAADF00D = 0
+	 data[79] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             51
+Capacity:         80
+DeadInside:       0
+StackHashSum:     280191854
+StructHashSum:    1750826763
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = 0000001D = 0
+	 data[30] = 0000001E = 0
+	 data[31] = 0000001F = 0
+	 data[32] = 00000020 = 0
+	 data[33] = 00000021 = 0
+	 data[34] = 00000022 = 0
+	 data[35] = 00000023 = 0
+	 data[36] = 00000024 = 0
+	 data[37] = 00000025 = 0
+	 data[38] = 00000026 = 0
+	 data[39] = 00000027 = 0
+	 data[40] = 00000028 = 0
+	 data[41] = 00000029 = 0
+	 data[42] = 0000002A = 0
+	 data[43] = 0000002B = 0
+	 data[44] = 0000002C = 0
+	 data[45] = 0000002D = 0
+	 data[46] = 0000002E = 0
+	 data[47] = 0000002F = 0
+	 data[48] = 00000030 = 0
+	 data[49] = 00000031 = 0
+	 data[50] = 00000032 = 0
+	 data[51] = BAADF00D = 0
+	 data[52] = BAADF00D = 0
+	 data[53] = BAADF00D = 0
+	 data[54] = BAADF00D = 0
+	 data[55] = BAADF00D = 0
+	 data[56] = BAADF00D = 0
+	 data[57] = BAADF00D = 0
+	 data[58] = BAADF00D = 0
+	 data[59] = BAADF00D = 0
+	 data[60] = BAADF00D = 0
+	 data[61] = BAADF00D = 0
+	 data[62] = BAADF00D = 0
+	 data[63] = BAADF00D = 0
+	 data[64] = BAADF00D = 0
+	 data[65] = BAADF00D = 0
+	 data[66] = BAADF00D = 0
+	 data[67] = BAADF00D = 0
+	 data[68] = BAADF00D = 0
+	 data[69] = BAADF00D = 0
+	 data[70] = BAADF00D = 0
+	 data[71] = BAADF00D = 0
+	 data[72] = BAADF00D = 0
+	 data[73] = BAADF00D = 0
+	 data[74] = BAADF00D = 0
+	 data[75] = BAADF00D = 0
+	 data[76] = BAADF00D = 0
+	 data[77] = BAADF00D = 0
+	 data[78] = BAADF00D = 0
+	 data[79] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             61
+Capacity:         80
+DeadInside:       0
+StackHashSum:     -973631279
+StructHashSum:    276240123
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = 0000001D = 0
+	 data[30] = 0000001E = 0
+	 data[31] = 0000001F = 0
+	 data[32] = 00000020 = 0
+	 data[33] = 00000021 = 0
+	 data[34] = 00000022 = 0
+	 data[35] = 00000023 = 0
+	 data[36] = 00000024 = 0
+	 data[37] = 00000025 = 0
+	 data[38] = 00000026 = 0
+	 data[39] = 00000027 = 0
+	 data[40] = 00000028 = 0
+	 data[41] = 00000029 = 0
+	 data[42] = 0000002A = 0
+	 data[43] = 0000002B = 0
+	 data[44] = 0000002C = 0
+	 data[45] = 0000002D = 0
+	 data[46] = 0000002E = 0
+	 data[47] = 0000002F = 0
+	 data[48] = 00000030 = 0
+	 data[49] = 00000031 = 0
+	 data[50] = 00000032 = 0
+	 data[51] = 00000033 = 0
+	 data[52] = 00000034 = 0
+	 data[53] = 00000035 = 0
+	 data[54] = 00000036 = 0
+	 data[55] = 00000037 = 0
+	 data[56] = 00000038 = 0
+	 data[57] = 00000039 = 0
+	 data[58] = 0000003A = 0
+	 data[59] = 0000003B = 0
+	 data[60] = 0000003C = 0
+	 data[61] = BAADF00D = 0
+	 data[62] = BAADF00D = 0
+	 data[63] = BAADF00D = 0
+	 data[64] = BAADF00D = 0
+	 data[65] = BAADF00D = 0
+	 data[66] = BAADF00D = 0
+	 data[67] = BAADF00D = 0
+	 data[68] = BAADF00D = 0
+	 data[69] = BAADF00D = 0
+	 data[70] = BAADF00D = 0
+	 data[71] = BAADF00D = 0
+	 data[72] = BAADF00D = 0
+	 data[73] = BAADF00D = 0
+	 data[74] = BAADF00D = 0
+	 data[75] = BAADF00D = 0
+	 data[76] = BAADF00D = 0
+	 data[77] = BAADF00D = 0
+	 data[78] = BAADF00D = 0
+	 data[79] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             71
+Capacity:         80
+DeadInside:       0
+StackHashSum:     1945692184
+StructHashSum:    -444727577
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = 0000001D = 0
+	 data[30] = 0000001E = 0
+	 data[31] = 0000001F = 0
+	 data[32] = 00000020 = 0
+	 data[33] = 00000021 = 0
+	 data[34] = 00000022 = 0
+	 data[35] = 00000023 = 0
+	 data[36] = 00000024 = 0
+	 data[37] = 00000025 = 0
+	 data[38] = 00000026 = 0
+	 data[39] = 00000027 = 0
+	 data[40] = 00000028 = 0
+	 data[41] = 00000029 = 0
+	 data[42] = 0000002A = 0
+	 data[43] = 0000002B = 0
+	 data[44] = 0000002C = 0
+	 data[45] = 0000002D = 0
+	 data[46] = 0000002E = 0
+	 data[47] = 0000002F = 0
+	 data[48] = 00000030 = 0
+	 data[49] = 00000031 = 0
+	 data[50] = 00000032 = 0
+	 data[51] = 00000033 = 0
+	 data[52] = 00000034 = 0
+	 data[53] = 00000035 = 0
+	 data[54] = 00000036 = 0
+	 data[55] = 00000037 = 0
+	 data[56] = 00000038 = 0
+	 data[57] = 00000039 = 0
+	 data[58] = 0000003A = 0
+	 data[59] = 0000003B = 0
+	 data[60] = 0000003C = 0
+	 data[61] = 0000003D = 0
+	 data[62] = 0000003E = 0
+	 data[63] = 0000003F = 0
+	 data[64] = 00000040 = 0
+	 data[65] = 00000041 = 0
+	 data[66] = 00000042 = 0
+	 data[67] = 00000043 = 0
+	 data[68] = 00000044 = 0
+	 data[69] = 00000045 = 0
+	 data[70] = 00000046 = 0
+	 data[71] = BAADF00D = 0
+	 data[72] = BAADF00D = 0
+	 data[73] = BAADF00D = 0
+	 data[74] = BAADF00D = 0
+	 data[75] = BAADF00D = 0
+	 data[76] = BAADF00D = 0
+	 data[77] = BAADF00D = 0
+	 data[78] = BAADF00D = 0
+	 data[79] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             81
+Capacity:         160
+DeadInside:       0
+StackHashSum:     968671363
+StructHashSum:    1466642793
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = 0000003B = 0
+	 data[060] = 0000003C = 0
+	 data[061] = 0000003D = 0
+	 data[062] = 0000003E = 0
+	 data[063] = 0000003F = 0
+	 data[064] = 00000040 = 0
+	 data[065] = 00000041 = 0
+	 data[066] = 00000042 = 0
+	 data[067] = 00000043 = 0
+	 data[068] = 00000044 = 0
+	 data[069] = 00000045 = 0
+	 data[070] = 00000046 = 0
+	 data[071] = 00000047 = 0
+	 data[072] = 00000048 = 0
+	 data[073] = 00000049 = 0
+	 data[074] = 0000004A = 0
+	 data[075] = 0000004B = 0
+	 data[076] = 0000004C = 0
+	 data[077] = 0000004D = 0
+	 data[078] = 0000004E = 0
+	 data[079] = 0000004F = 0
+	 data[080] = 00000050 = 0
+	 data[081] = BAADF00D = 0
+	 data[082] = BAADF00D = 0
+	 data[083] = BAADF00D = 0
+	 data[084] = BAADF00D = 0
+	 data[085] = BAADF00D = 0
+	 data[086] = BAADF00D = 0
+	 data[087] = BAADF00D = 0
+	 data[088] = BAADF00D = 0
+	 data[089] = BAADF00D = 0
+	 data[090] = BAADF00D = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             91
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -1404630126
+StructHashSum:    -1807895679
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = 0000003B = 0
+	 data[060] = 0000003C = 0
+	 data[061] = 0000003D = 0
+	 data[062] = 0000003E = 0
+	 data[063] = 0000003F = 0
+	 data[064] = 00000040 = 0
+	 data[065] = 00000041 = 0
+	 data[066] = 00000042 = 0
+	 data[067] = 00000043 = 0
+	 data[068] = 00000044 = 0
+	 data[069] = 00000045 = 0
+	 data[070] = 00000046 = 0
+	 data[071] = 00000047 = 0
+	 data[072] = 00000048 = 0
+	 data[073] = 00000049 = 0
+	 data[074] = 0000004A = 0
+	 data[075] = 0000004B = 0
+	 data[076] = 0000004C = 0
+	 data[077] = 0000004D = 0
+	 data[078] = 0000004E = 0
+	 data[079] = 0000004F = 0
+	 data[080] = 00000050 = 0
+	 data[081] = 00000051 = 0
+	 data[082] = 00000052 = 0
+	 data[083] = 00000053 = 0
+	 data[084] = 00000054 = 0
+	 data[085] = 00000055 = 0
+	 data[086] = 00000056 = 0
+	 data[087] = 00000057 = 0
+	 data[088] = 00000058 = 0
+	 data[089] = 00000059 = 0
+	 data[090] = 0000005A = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+	line 230: counted "Sum_errcodes" = 1
+
+	line 158: counted "Errcode" = 0
+
+	line 159: counted "Bit Move of Errcode" = 1
+
+	line 160: counted "Result of Bit Comparison" = 1
+
+
+In int DecodeErrors(FILE*, long long unsigned int): 
+	line 164: "Try to Log Error"
+
+	line 178: counted "errcode" = 0
+
+
+In int LogError(FILE*, int): 
+-------------------------------------------------------
+| "Everything OK: Stack is all right and can be used" |
+-------------------------------------------------------
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             99
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -1796478234
+StructHashSum:    -212982067
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = 0000003B = 0
+	 data[060] = 0000003C = 0
+	 data[061] = 0000003D = 0
+	 data[062] = 0000003E = 0
+	 data[063] = 0000003F = 0
+	 data[064] = 00000040 = 0
+	 data[065] = 00000041 = 0
+	 data[066] = 00000042 = 0
+	 data[067] = 00000043 = 0
+	 data[068] = 00000044 = 0
+	 data[069] = 00000045 = 0
+	 data[070] = 00000046 = 0
+	 data[071] = 00000047 = 0
+	 data[072] = 00000048 = 0
+	 data[073] = 00000049 = 0
+	 data[074] = 0000004A = 0
+	 data[075] = 0000004B = 0
+	 data[076] = 0000004C = 0
+	 data[077] = 0000004D = 0
+	 data[078] = 0000004E = 0
+	 data[079] = 0000004F = 0
+	 data[080] = 00000050 = 0
+	 data[081] = 00000051 = 0
+	 data[082] = 00000052 = 0
+	 data[083] = 00000053 = 0
+	 data[084] = 00000054 = 0
+	 data[085] = 00000055 = 0
+	 data[086] = 00000056 = 0
+	 data[087] = 00000057 = 0
+	 data[088] = 00000058 = 0
+	 data[089] = 00000059 = 0
+	 data[090] = 0000005A = 0
+	 data[091] = 0000005B = 0
+	 data[092] = 0000005C = 0
+	 data[093] = 0000005D = 0
+	 data[094] = 0000005E = 0
+	 data[095] = 0000005F = 0
+	 data[096] = 00000060 = 0
+	 data[097] = 00000061 = 0
+	 data[098] = 00000062 = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             89
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -791133817
+StructHashSum:    -1410095204
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = 0000003B = 0
+	 data[060] = 0000003C = 0
+	 data[061] = 0000003D = 0
+	 data[062] = 0000003E = 0
+	 data[063] = 0000003F = 0
+	 data[064] = 00000040 = 0
+	 data[065] = 00000041 = 0
+	 data[066] = 00000042 = 0
+	 data[067] = 00000043 = 0
+	 data[068] = 00000044 = 0
+	 data[069] = 00000045 = 0
+	 data[070] = 00000046 = 0
+	 data[071] = 00000047 = 0
+	 data[072] = 00000048 = 0
+	 data[073] = 00000049 = 0
+	 data[074] = 0000004A = 0
+	 data[075] = 0000004B = 0
+	 data[076] = 0000004C = 0
+	 data[077] = 0000004D = 0
+	 data[078] = 0000004E = 0
+	 data[079] = 0000004F = 0
+	 data[080] = 00000050 = 0
+	 data[081] = 00000051 = 0
+	 data[082] = 00000052 = 0
+	 data[083] = 00000053 = 0
+	 data[084] = 00000054 = 0
+	 data[085] = 00000055 = 0
+	 data[086] = 00000056 = 0
+	 data[087] = 00000057 = 0
+	 data[088] = 00000058 = 0
+	 data[089] = BAADF00D = 0
+	 data[090] = BAADF00D = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             79
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -1096322548
+StructHashSum:    640599325
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = 0000003B = 0
+	 data[060] = 0000003C = 0
+	 data[061] = 0000003D = 0
+	 data[062] = 0000003E = 0
+	 data[063] = 0000003F = 0
+	 data[064] = 00000040 = 0
+	 data[065] = 00000041 = 0
+	 data[066] = 00000042 = 0
+	 data[067] = 00000043 = 0
+	 data[068] = 00000044 = 0
+	 data[069] = 00000045 = 0
+	 data[070] = 00000046 = 0
+	 data[071] = 00000047 = 0
+	 data[072] = 00000048 = 0
+	 data[073] = 00000049 = 0
+	 data[074] = 0000004A = 0
+	 data[075] = 0000004B = 0
+	 data[076] = 0000004C = 0
+	 data[077] = 0000004D = 0
+	 data[078] = 0000004E = 0
+	 data[079] = BAADF00D = 0
+	 data[080] = BAADF00D = 0
+	 data[081] = BAADF00D = 0
+	 data[082] = BAADF00D = 0
+	 data[083] = BAADF00D = 0
+	 data[084] = BAADF00D = 0
+	 data[085] = BAADF00D = 0
+	 data[086] = BAADF00D = 0
+	 data[087] = BAADF00D = 0
+	 data[088] = BAADF00D = 0
+	 data[089] = BAADF00D = 0
+	 data[090] = BAADF00D = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             69
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -1145510795
+StructHashSum:    -1604593687
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = 0000003B = 0
+	 data[060] = 0000003C = 0
+	 data[061] = 0000003D = 0
+	 data[062] = 0000003E = 0
+	 data[063] = 0000003F = 0
+	 data[064] = 00000040 = 0
+	 data[065] = 00000041 = 0
+	 data[066] = 00000042 = 0
+	 data[067] = 00000043 = 0
+	 data[068] = 00000044 = 0
+	 data[069] = BAADF00D = 0
+	 data[070] = BAADF00D = 0
+	 data[071] = BAADF00D = 0
+	 data[072] = BAADF00D = 0
+	 data[073] = BAADF00D = 0
+	 data[074] = BAADF00D = 0
+	 data[075] = BAADF00D = 0
+	 data[076] = BAADF00D = 0
+	 data[077] = BAADF00D = 0
+	 data[078] = BAADF00D = 0
+	 data[079] = BAADF00D = 0
+	 data[080] = BAADF00D = 0
+	 data[081] = BAADF00D = 0
+	 data[082] = BAADF00D = 0
+	 data[083] = BAADF00D = 0
+	 data[084] = BAADF00D = 0
+	 data[085] = BAADF00D = 0
+	 data[086] = BAADF00D = 0
+	 data[087] = BAADF00D = 0
+	 data[088] = BAADF00D = 0
+	 data[089] = BAADF00D = 0
+	 data[090] = BAADF00D = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             59
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -1883766590
+StructHashSum:    -314895047
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = 00000031 = 0
+	 data[050] = 00000032 = 0
+	 data[051] = 00000033 = 0
+	 data[052] = 00000034 = 0
+	 data[053] = 00000035 = 0
+	 data[054] = 00000036 = 0
+	 data[055] = 00000037 = 0
+	 data[056] = 00000038 = 0
+	 data[057] = 00000039 = 0
+	 data[058] = 0000003A = 0
+	 data[059] = BAADF00D = 0
+	 data[060] = BAADF00D = 0
+	 data[061] = BAADF00D = 0
+	 data[062] = BAADF00D = 0
+	 data[063] = BAADF00D = 0
+	 data[064] = BAADF00D = 0
+	 data[065] = BAADF00D = 0
+	 data[066] = BAADF00D = 0
+	 data[067] = BAADF00D = 0
+	 data[068] = BAADF00D = 0
+	 data[069] = BAADF00D = 0
+	 data[070] = BAADF00D = 0
+	 data[071] = BAADF00D = 0
+	 data[072] = BAADF00D = 0
+	 data[073] = BAADF00D = 0
+	 data[074] = BAADF00D = 0
+	 data[075] = BAADF00D = 0
+	 data[076] = BAADF00D = 0
+	 data[077] = BAADF00D = 0
+	 data[078] = BAADF00D = 0
+	 data[079] = BAADF00D = 0
+	 data[080] = BAADF00D = 0
+	 data[081] = BAADF00D = 0
+	 data[082] = BAADF00D = 0
+	 data[083] = BAADF00D = 0
+	 data[084] = BAADF00D = 0
+	 data[085] = BAADF00D = 0
+	 data[086] = BAADF00D = 0
+	 data[087] = BAADF00D = 0
+	 data[088] = BAADF00D = 0
+	 data[089] = BAADF00D = 0
+	 data[090] = BAADF00D = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             49
+Capacity:         160
+DeadInside:       0
+StackHashSum:     -1130615053
+StructHashSum:    583819980
+
+{
+	 data[000] = 00000000 = 0
+	 data[001] = 00000001 = 0
+	 data[002] = 00000002 = 0
+	 data[003] = 00000003 = 0
+	 data[004] = 00000004 = 0
+	 data[005] = 00000005 = 0
+	 data[006] = 00000006 = 0
+	 data[007] = 00000007 = 0
+	 data[008] = 00000008 = 0
+	 data[009] = 00000009 = 0
+	 data[010] = 0000000A = 0
+	 data[011] = 0000000B = 0
+	 data[012] = 0000000C = 0
+	 data[013] = 0000000D = 0
+	 data[014] = 0000000E = 0
+	 data[015] = 0000000F = 0
+	 data[016] = 00000010 = 0
+	 data[017] = 00000011 = 0
+	 data[018] = 00000012 = 0
+	 data[019] = 00000013 = 0
+	 data[020] = 00000014 = 0
+	 data[021] = 00000015 = 0
+	 data[022] = 00000016 = 0
+	 data[023] = 00000017 = 0
+	 data[024] = 00000018 = 0
+	 data[025] = 00000019 = 0
+	 data[026] = 0000001A = 0
+	 data[027] = 0000001B = 0
+	 data[028] = 0000001C = 0
+	 data[029] = 0000001D = 0
+	 data[030] = 0000001E = 0
+	 data[031] = 0000001F = 0
+	 data[032] = 00000020 = 0
+	 data[033] = 00000021 = 0
+	 data[034] = 00000022 = 0
+	 data[035] = 00000023 = 0
+	 data[036] = 00000024 = 0
+	 data[037] = 00000025 = 0
+	 data[038] = 00000026 = 0
+	 data[039] = 00000027 = 0
+	 data[040] = 00000028 = 0
+	 data[041] = 00000029 = 0
+	 data[042] = 0000002A = 0
+	 data[043] = 0000002B = 0
+	 data[044] = 0000002C = 0
+	 data[045] = 0000002D = 0
+	 data[046] = 0000002E = 0
+	 data[047] = 0000002F = 0
+	 data[048] = 00000030 = 0
+	 data[049] = BAADF00D = 0
+	 data[050] = BAADF00D = 0
+	 data[051] = BAADF00D = 0
+	 data[052] = BAADF00D = 0
+	 data[053] = BAADF00D = 0
+	 data[054] = BAADF00D = 0
+	 data[055] = BAADF00D = 0
+	 data[056] = BAADF00D = 0
+	 data[057] = BAADF00D = 0
+	 data[058] = BAADF00D = 0
+	 data[059] = BAADF00D = 0
+	 data[060] = BAADF00D = 0
+	 data[061] = BAADF00D = 0
+	 data[062] = BAADF00D = 0
+	 data[063] = BAADF00D = 0
+	 data[064] = BAADF00D = 0
+	 data[065] = BAADF00D = 0
+	 data[066] = BAADF00D = 0
+	 data[067] = BAADF00D = 0
+	 data[068] = BAADF00D = 0
+	 data[069] = BAADF00D = 0
+	 data[070] = BAADF00D = 0
+	 data[071] = BAADF00D = 0
+	 data[072] = BAADF00D = 0
+	 data[073] = BAADF00D = 0
+	 data[074] = BAADF00D = 0
+	 data[075] = BAADF00D = 0
+	 data[076] = BAADF00D = 0
+	 data[077] = BAADF00D = 0
+	 data[078] = BAADF00D = 0
+	 data[079] = BAADF00D = 0
+	 data[080] = BAADF00D = 0
+	 data[081] = BAADF00D = 0
+	 data[082] = BAADF00D = 0
+	 data[083] = BAADF00D = 0
+	 data[084] = BAADF00D = 0
+	 data[085] = BAADF00D = 0
+	 data[086] = BAADF00D = 0
+	 data[087] = BAADF00D = 0
+	 data[088] = BAADF00D = 0
+	 data[089] = BAADF00D = 0
+	 data[090] = BAADF00D = 0
+	 data[091] = BAADF00D = 0
+	 data[092] = BAADF00D = 0
+	 data[093] = BAADF00D = 0
+	 data[094] = BAADF00D = 0
+	 data[095] = BAADF00D = 0
+	 data[096] = BAADF00D = 0
+	 data[097] = BAADF00D = 0
+	 data[098] = BAADF00D = 0
+	 data[099] = BAADF00D = 0
+	 data[100] = BAADF00D = 0
+	 data[101] = BAADF00D = 0
+	 data[102] = BAADF00D = 0
+	 data[103] = BAADF00D = 0
+	 data[104] = BAADF00D = 0
+	 data[105] = BAADF00D = 0
+	 data[106] = BAADF00D = 0
+	 data[107] = BAADF00D = 0
+	 data[108] = BAADF00D = 0
+	 data[109] = BAADF00D = 0
+	 data[110] = BAADF00D = 0
+	 data[111] = BAADF00D = 0
+	 data[112] = BAADF00D = 0
+	 data[113] = BAADF00D = 0
+	 data[114] = BAADF00D = 0
+	 data[115] = BAADF00D = 0
+	 data[116] = BAADF00D = 0
+	 data[117] = BAADF00D = 0
+	 data[118] = BAADF00D = 0
+	 data[119] = BAADF00D = 0
+	 data[120] = BAADF00D = 0
+	 data[121] = BAADF00D = 0
+	 data[122] = BAADF00D = 0
+	 data[123] = BAADF00D = 0
+	 data[124] = BAADF00D = 0
+	 data[125] = BAADF00D = 0
+	 data[126] = BAADF00D = 0
+	 data[127] = BAADF00D = 0
+	 data[128] = BAADF00D = 0
+	 data[129] = BAADF00D = 0
+	 data[130] = BAADF00D = 0
+	 data[131] = BAADF00D = 0
+	 data[132] = BAADF00D = 0
+	 data[133] = BAADF00D = 0
+	 data[134] = BAADF00D = 0
+	 data[135] = BAADF00D = 0
+	 data[136] = BAADF00D = 0
+	 data[137] = BAADF00D = 0
+	 data[138] = BAADF00D = 0
+	 data[139] = BAADF00D = 0
+	 data[140] = BAADF00D = 0
+	 data[141] = BAADF00D = 0
+	 data[142] = BAADF00D = 0
+	 data[143] = BAADF00D = 0
+	 data[144] = BAADF00D = 0
+	 data[145] = BAADF00D = 0
+	 data[146] = BAADF00D = 0
+	 data[147] = BAADF00D = 0
+	 data[148] = BAADF00D = 0
+	 data[149] = BAADF00D = 0
+	 data[150] = BAADF00D = 0
+	 data[151] = BAADF00D = 0
+	 data[152] = BAADF00D = 0
+	 data[153] = BAADF00D = 0
+	 data[154] = BAADF00D = 0
+	 data[155] = BAADF00D = 0
+	 data[156] = BAADF00D = 0
+	 data[157] = BAADF00D = 0
+	 data[158] = BAADF00D = 0
+	 data[159] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             39
+Capacity:         80
+DeadInside:       0
+StackHashSum:     -1009791032
+StructHashSum:    1374207362
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = 0000001D = 0
+	 data[30] = 0000001E = 0
+	 data[31] = 0000001F = 0
+	 data[32] = 00000020 = 0
+	 data[33] = 00000021 = 0
+	 data[34] = 00000022 = 0
+	 data[35] = 00000023 = 0
+	 data[36] = 00000024 = 0
+	 data[37] = 00000025 = 0
+	 data[38] = 00000026 = 0
+	 data[39] = BAADF00D = 0
+	 data[40] = BAADF00D = 0
+	 data[41] = BAADF00D = 0
+	 data[42] = BAADF00D = 0
+	 data[43] = BAADF00D = 0
+	 data[44] = BAADF00D = 0
+	 data[45] = BAADF00D = 0
+	 data[46] = BAADF00D = 0
+	 data[47] = BAADF00D = 0
+	 data[48] = BAADF00D = 0
+	 data[49] = BAADF00D = 0
+	 data[50] = BAADF00D = 0
+	 data[51] = BAADF00D = 0
+	 data[52] = BAADF00D = 0
+	 data[53] = BAADF00D = 0
+	 data[54] = BAADF00D = 0
+	 data[55] = BAADF00D = 0
+	 data[56] = BAADF00D = 0
+	 data[57] = BAADF00D = 0
+	 data[58] = BAADF00D = 0
+	 data[59] = BAADF00D = 0
+	 data[60] = BAADF00D = 0
+	 data[61] = BAADF00D = 0
+	 data[62] = BAADF00D = 0
+	 data[63] = BAADF00D = 0
+	 data[64] = BAADF00D = 0
+	 data[65] = BAADF00D = 0
+	 data[66] = BAADF00D = 0
+	 data[67] = BAADF00D = 0
+	 data[68] = BAADF00D = 0
+	 data[69] = BAADF00D = 0
+	 data[70] = BAADF00D = 0
+	 data[71] = BAADF00D = 0
+	 data[72] = BAADF00D = 0
+	 data[73] = BAADF00D = 0
+	 data[74] = BAADF00D = 0
+	 data[75] = BAADF00D = 0
+	 data[76] = BAADF00D = 0
+	 data[77] = BAADF00D = 0
+	 data[78] = BAADF00D = 0
+	 data[79] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             29
+Capacity:         80
+DeadInside:       0
+StackHashSum:     -1808535103
+StructHashSum:    547696850
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = 00000013 = 0
+	 data[20] = 00000014 = 0
+	 data[21] = 00000015 = 0
+	 data[22] = 00000016 = 0
+	 data[23] = 00000017 = 0
+	 data[24] = 00000018 = 0
+	 data[25] = 00000019 = 0
+	 data[26] = 0000001A = 0
+	 data[27] = 0000001B = 0
+	 data[28] = 0000001C = 0
+	 data[29] = BAADF00D = 0
+	 data[30] = BAADF00D = 0
+	 data[31] = BAADF00D = 0
+	 data[32] = BAADF00D = 0
+	 data[33] = BAADF00D = 0
+	 data[34] = BAADF00D = 0
+	 data[35] = BAADF00D = 0
+	 data[36] = BAADF00D = 0
+	 data[37] = BAADF00D = 0
+	 data[38] = BAADF00D = 0
+	 data[39] = BAADF00D = 0
+	 data[40] = BAADF00D = 0
+	 data[41] = BAADF00D = 0
+	 data[42] = BAADF00D = 0
+	 data[43] = BAADF00D = 0
+	 data[44] = BAADF00D = 0
+	 data[45] = BAADF00D = 0
+	 data[46] = BAADF00D = 0
+	 data[47] = BAADF00D = 0
+	 data[48] = BAADF00D = 0
+	 data[49] = BAADF00D = 0
+	 data[50] = BAADF00D = 0
+	 data[51] = BAADF00D = 0
+	 data[52] = BAADF00D = 0
+	 data[53] = BAADF00D = 0
+	 data[54] = BAADF00D = 0
+	 data[55] = BAADF00D = 0
+	 data[56] = BAADF00D = 0
+	 data[57] = BAADF00D = 0
+	 data[58] = BAADF00D = 0
+	 data[59] = BAADF00D = 0
+	 data[60] = BAADF00D = 0
+	 data[61] = BAADF00D = 0
+	 data[62] = BAADF00D = 0
+	 data[63] = BAADF00D = 0
+	 data[64] = BAADF00D = 0
+	 data[65] = BAADF00D = 0
+	 data[66] = BAADF00D = 0
+	 data[67] = BAADF00D = 0
+	 data[68] = BAADF00D = 0
+	 data[69] = BAADF00D = 0
+	 data[70] = BAADF00D = 0
+	 data[71] = BAADF00D = 0
+	 data[72] = BAADF00D = 0
+	 data[73] = BAADF00D = 0
+	 data[74] = BAADF00D = 0
+	 data[75] = BAADF00D = 0
+	 data[76] = BAADF00D = 0
+	 data[77] = BAADF00D = 0
+	 data[78] = BAADF00D = 0
+	 data[79] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             19
+Capacity:         40
+DeadInside:       0
+StackHashSum:     1960100350
+StructHashSum:    1456043987
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = 00000009 = 0
+	 data[10] = 0000000A = 0
+	 data[11] = 0000000B = 0
+	 data[12] = 0000000C = 0
+	 data[13] = 0000000D = 0
+	 data[14] = 0000000E = 0
+	 data[15] = 0000000F = 0
+	 data[16] = 00000010 = 0
+	 data[17] = 00000011 = 0
+	 data[18] = 00000012 = 0
+	 data[19] = BAADF00D = 0
+	 data[20] = BAADF00D = 0
+	 data[21] = BAADF00D = 0
+	 data[22] = BAADF00D = 0
+	 data[23] = BAADF00D = 0
+	 data[24] = BAADF00D = 0
+	 data[25] = BAADF00D = 0
+	 data[26] = BAADF00D = 0
+	 data[27] = BAADF00D = 0
+	 data[28] = BAADF00D = 0
+	 data[29] = BAADF00D = 0
+	 data[30] = BAADF00D = 0
+	 data[31] = BAADF00D = 0
+	 data[32] = BAADF00D = 0
+	 data[33] = BAADF00D = 0
+	 data[34] = BAADF00D = 0
+	 data[35] = BAADF00D = 0
+	 data[36] = BAADF00D = 0
+	 data[37] = BAADF00D = 0
+	 data[38] = BAADF00D = 0
+	 data[39] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 73):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             9
+Capacity:         20
+DeadInside:       0
+StackHashSum:     -1925934097
+StructHashSum:    -1022278886
+
+{
+	 data[00] = 00000000 = 0
+	 data[01] = 00000001 = 0
+	 data[02] = 00000002 = 0
+	 data[03] = 00000003 = 0
+	 data[04] = 00000004 = 0
+	 data[05] = 00000005 = 0
+	 data[06] = 00000006 = 0
+	 data[07] = 00000007 = 0
+	 data[08] = 00000008 = 0
+	 data[09] = BAADF00D = 0
+	 data[10] = BAADF00D = 0
+	 data[11] = BAADF00D = 0
+	 data[12] = BAADF00D = 0
+	 data[13] = BAADF00D = 0
+	 data[14] = BAADF00D = 0
+	 data[15] = BAADF00D = 0
+	 data[16] = BAADF00D = 0
+	 data[17] = BAADF00D = 0
+	 data[18] = BAADF00D = 0
+	 data[19] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+
+++++++++++ Start Dump ++++++++++
+
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
+Stack [0x00BE0DA8] OK
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 47): 
+
+Pointer:          00BE0DA8
+Size:             0
+Capacity:         20
+DeadInside:       0
+StackHashSum:     978650447
+StructHashSum:    1989681005
+
+{
+	 data[00] = BAADF00D = 0
+	 data[01] = BAADF00D = 0
+	 data[02] = BAADF00D = 0
+	 data[03] = BAADF00D = 0
+	 data[04] = BAADF00D = 0
+	 data[05] = BAADF00D = 0
+	 data[06] = BAADF00D = 0
+	 data[07] = BAADF00D = 0
+	 data[08] = BAADF00D = 0
+	 data[09] = BAADF00D = 0
+	 data[10] = BAADF00D = 0
+	 data[11] = BAADF00D = 0
+	 data[12] = BAADF00D = 0
+	 data[13] = BAADF00D = 0
+	 data[14] = BAADF00D = 0
+	 data[15] = BAADF00D = 0
+	 data[16] = BAADF00D = 0
+	 data[17] = BAADF00D = 0
+	 data[18] = BAADF00D = 0
+	 data[19] = BAADF00D = 0
+}
+
+
+---------- Finish Dump ----------
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Finish program
