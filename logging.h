@@ -16,7 +16,7 @@
 enum LOG_MODES
 {
     SIMPLE           = 0,
-    FATAL_ERROR      = 1,
+    FRAMED      = 1,
     N_LINE           = 2,
     FUNC_N_LINE      = 3,
     FILE_FUNC_N_LINE = 4
@@ -89,6 +89,15 @@ enum LOG_MODES
                                                            \
     fflush(text_file);                                     \
 } */
+#define LogError(errcode)                                         \
+    {                                                             \
+        LogCritError(errcode, __PRETTY_FUNCTION__, __LINE__);     \
+    }
+
+#define print_crit_errors(text, func, line)                       \
+    {                                                             \
+        fprintf_log(FRAMED, text, func, line);   \
+    }
 
 #define print_log(mode, text)                                     \
 {                                                                 \
@@ -98,8 +107,8 @@ enum LOG_MODES
             fprintf_log(mode, text);                              \
             break;                                                \
                                                                   \
-        case FATAL_ERROR:                                          \
-            fprintf_log(mode, text, __PRETTY_FUNCTION__);         \
+        case FRAMED:                                              \
+            fprintf_log(mode, text, __PRETTY_FUNCTION__, __LINE__);\
             break;                                                \
                                                                   \
         case N_LINE:                                               \
@@ -118,7 +127,7 @@ enum LOG_MODES
             break;                                                \
                                                                   \
         default:                                                  \
-            fprintf_log(FATAL_ERROR,                               \
+            fprintf_log(FRAMED,                               \
                       "LOGERROR: Invalid Mode of logging\n",      \
                       __PRETTY_FUNCTION__);                       \
     }                                                             \
@@ -129,9 +138,9 @@ FILE* open_log();
 
 void close_log();
 
-int fprintf_log(size_t mode, char* text, ...);
+int fprintf_log(size_t mode, const char* text, ...);
 
-void PrintFatalError(char* func, char* text);
+void PrintFatalError(const char* func, int line, const char* text);
 
 void log(const char* format, ...);
 //end prototypes

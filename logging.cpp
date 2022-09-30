@@ -30,11 +30,15 @@ void close_log()
     fclose(LOG_FILE);
 }
 
-int fprintf_log(size_t mode, char* text, ...)
+int fprintf_log(size_t mode, const char* text, ...)
 {
     va_list params;
 
     va_start(params, mode);
+
+    const char* func = "";
+
+    int line = 0;
 
     switch (mode)
     {
@@ -42,13 +46,18 @@ int fprintf_log(size_t mode, char* text, ...)
             log("%s\n", text);
             break;
 
-        case FATAL_ERROR:
-            PrintFatalError(va_arg(params, char*), text);
+        case FRAMED:
+            func = va_arg(params, char*);
+            line = va_arg(params, int);
+            PrintFatalError(func, line, text);
             break;
 
         case FILE_FUNC_N_LINE:
             log("\nIn file %s: ", va_arg(params, char*));
             break;
+
+        default:
+            ;
     }
 
     if (mode >= FUNC_N_LINE)
@@ -64,11 +73,13 @@ int fprintf_log(size_t mode, char* text, ...)
     va_end(params);
 }
 
-void PrintFatalError(char* func, char* text)
+void PrintFatalError(const char* func, int line, const char* text)
 {
     int len_text = strlen(text);
 
-    log("\nIn %s: \n", func);
+    log("\nIn %s ", func);
+
+    log("(line %d):\n", line);
 
     for (size_t i = 0; i < len_text + 4; i++)
     {

@@ -5,7 +5,7 @@
 
 // two headers: interface internal
 
-typedef unsigned long long ULL;
+typedef unsigned long long UnsignedLL;
 
 typedef unsigned long long bird_t;
 
@@ -16,8 +16,10 @@ typedef struct stack_info
     size_t             Size;
     size_t             Capacity;
     bool               DeadInside;
-    ULL StackHashSum;
-    ULL StructHashSum;
+    bird_t*            PtrStackLeftBird;
+    bird_t*            PtrStackRightBird;
+    UnsignedLL                StackHashSum;
+    UnsignedLL                StructHashSum;
 
     struct  calling_inf
     {
@@ -36,14 +38,20 @@ stack_t StructureStackInit(const char* name,
                            const char* file,
                            int line);
 
-int LogError(int errcode);
+UnsignedLL FindErrors(stack_t* stk);
+
+int DecodeErrors(UnsignedLL sum_errcodes);
+
+int LogCritError(int errcode, const char* func, int line);
+
+UnsignedLL StackVerify(stack_t* stk);
+
+void DumpEmExit();
 
 int FuckingDump(stack_t* stk,
                 const char* funcname,
                 const char* filename,
                 int line);
-
-int StackPush(stack_t* stk, elem_t elem);
 
 int StackCtor(stack_t* stk);
 
@@ -55,11 +63,9 @@ int StackPush(stack_t* stk, elem_t elem);
 
 elem_t StackPop(stack_t* stk);
 
-ULL CalculateGNUHash(void* start_ptr, int num_bytes);
+UnsignedLL CalculateGNUHash(void* start_ptr, size_t num_bytes);
 
-ULL StackHash  (stack_t* stk);
-
-ULL StructHash (stack_t* stk);
+static int UpdateHash(stack_t* stk);
 
 int CheckLeftCannary  (stack_t* stk);
 
