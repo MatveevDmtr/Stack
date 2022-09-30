@@ -3,4 +3,6 @@
 
 typedef int elem_t;
 
+// MINIMAL SIZE  STACK
+
 #endif

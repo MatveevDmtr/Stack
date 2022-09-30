@@ -1,6 +1,8 @@
 #ifndef GETPOISON_H_INCLUDED
 #define GETPOISON_H_INCLUDED
 
+#include "logging.h"
+
 
 stack_t* getPoison (stack_t* /* value */)
 {

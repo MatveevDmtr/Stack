@@ -1,15 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <TXLib.h>
 
+#include "logging.h"
+#include "stack.h"
 #include "StackConfig.h"
 #include "macroses.h"
-#include "stack.h"
 #include "GetPoison.h"
+
+#define HASH 1
+#define CANARY 1
+#define VERIFIER 0
 
 const int MIN_LEN_STACK = 10;
 
-const unsigned long long START_HASH = 88005553535;
+const bird_t LEFT_CANNARY  = 0xDEEDFEE1BAD;
+
+const bird_t RIGHT_CANNARY = 0xDEEDFEE15AD;
+
+const ULL START_HASH = 88005553535;
 
 enum ERRCODES
 {
@@ -29,71 +39,82 @@ enum ERRCODES
      INVSTACKHASH   , // 13
      INVSTRUCTHASH  , // 14
      FILEERROR      , // 15
-     DEBUGINFOERROR   // 16
+     DEBUGINFOERROR , // 16
+     REALLOCERROR   , // 17
+     STACKOVERFLOW  , // 18
+     CONSTR_ERROR   , // 19
+     DESTR_ERROR      // 20
 };
 
 int main()
 {
-    FILE* log_file = open_log();
+    log("Log file opened\n");
 
-    log(log_file, "Log file opened");
+    fprintf(stderr, "Startuem\n");
 
-    stack_t stk1 = StructStackInit();
+    stack_t stk1 = StructStackInit(stk1);
 
-    stk1.debug_info.Orig_name    = "stk1";
-    stk1.debug_info.Func_calling = __PRETTY_FUNCTION__;
-    stk1.debug_info.File_calling = __FILE__;
-    stk1.debug_info.Line_created = __LINE__;
+    StackDump(&stk1);
 
-    StackDump(&stk1, log_file);
-
-    log_simple(log_file, "Stk1 initialized");
+    log("Stk1 initialized\n");
 
     StackCtor(&stk1);
 
-    log_simple(log_file, "Stk1 created");
+    //log_simple(LOG_FILE, "Stk1 created");
 
     for (size_t i = 0; i < 100; i++)
     {
-        StackPush(log_file, &stk1, i);
+        //StackPush(LOG_FILE, &stk1, i);
 
         if (i % 10 == 0)
         {
-            StackDump(&stk1, log_file);
+            //StackDump(&stk1, LOG_FILE);
         }
     }
 
     for (size_t i = 0; i < 100; i++)
     {
-        StackPop(log_file, &stk1);
+        //StackPop(LOG_FILE, &stk1);
 
         if (i % 10 == 0)
         {
-            StackDump(&stk1, log_file);
+            //StackDump(&stk1, LOG_FILE);
         }
     }
 
-    StackDump(&stk1, log_file);
-
-    close_log(log_file);
+    //StackDump(&stk1, LOG_FILE);
 }
 
-stack_t StructStackInit()
+stack_t StructureStackInit(const char* name,
+                           const char* func,
+                           const char* file,
+                           int line)
 {
     elem_t*            Ptr;
     size_t             Size;
     size_t             Capacity;
-    return {getPoison(Ptr),
-            getPoison(Size),
-            getPoison(Capacity),
-            1,
-            NULL,
-            NULL};
+
+    stack_t temp_stk = {LEFT_CANNARY,
+                        getPoison(Ptr),
+                        getPoison(Size),
+                        getPoison(Capacity),
+                        1,
+                        NULL,
+                        NULL};
+
+    temp_stk.debug_info.Orig_name    = name;
+    temp_stk.debug_info.Func_calling = func;
+    temp_stk.debug_info.File_calling = file;
+    temp_stk.debug_info.Line_created = line;
+
+    temp_stk.StructRightCannary  = RIGHT_CANNARY;
+
+    return temp_stk;
 }
 
 int FindErrors(stack_t* stk)
 {
-    unsigned long long sum_errcodes = 0;
+    ULL sum_errcodes = 0;
 
     if (stk == NULL || stk == getPoison(stk))       sum_errcodes += 1 << SEGFAULT;
     if (stk->DeadInside)                            sum_errcodes += 1 << ZOMBIE;
@@ -103,10 +124,12 @@ int FindErrors(stack_t* stk)
     if (stk->Size == getPoison(stk->Size))          sum_errcodes += 1 << SIZEPOISONED;
     if (stk->Capacity <= 0)                         sum_errcodes += 1 << NEGCAP;
     if (stk->Capacity == getPoison(stk->Capacity))  sum_errcodes += 1 << CAPPOISONED;
-    if (!CheckLeftCannary(stk))                     sum_errcodes += 1 << LBIRDSTACK;
-    if (!CheckRightCannary)                         sum_errcodes += 1 << RBIRDSTACK;
+    if (stk->StructLeftCannary  != LEFT_CANNARY)    sum_errcodes += 1 << LBIRDSTRUCT;
+    if (stk->StructRightCannary != RIGHT_CANNARY)   sum_errcodes += 1 << RBIRDSTRUCT;
+    //if (!CheckRightCannary)                       sum_errcodes += 1 << RBIRDSTACK;
+    if (stk->Size >= stk->Capacity)                 sum_errcodes += 1 << STACKOVERFLOW;
 
-    unsigned long long stack_hash_sum = CalculateGNUHash(stk->Ptr, stk->Capacity * sizeof(elem_t));
+    ULL stack_hash_sum = CalculateGNUHash(stk->Ptr, stk->Capacity * sizeof(elem_t)); // add cannaries
 
     if (stack_hash_sum != stk->StackHashSum)
     {
@@ -115,11 +138,11 @@ int FindErrors(stack_t* stk)
 
     stk->StackHashSum = stack_hash_sum;
 
-    unsigned long long struct_hash_sum      = 0;
-    unsigned long long prev_struct_hash_sum = stk->StructHashSum;
+    ULL struct_hash_sum      = 0;
+    ULL prev_struct_hash_sum = stk->StructHashSum;
 
-    stk->StructHashSum                      = 0;
-
+    stk->StructHashSum       = 0;
+    // off rejime: hash, canary, verifier
     if ((struct_hash_sum = CalculateGNUHash(stk, sizeof(stack_t))) != prev_struct_hash_sum)
     {
         sum_errcodes += 1 << INVSTRUCTHASH;
@@ -128,7 +151,9 @@ int FindErrors(stack_t* stk)
     stk->StructHashSum = struct_hash_sum;
 
     if (sum_errcodes == 0)
-         sum_errcodes++;
+    {
+         sum_errcodes = (1 << OK);
+    }
 
     return sum_errcodes;
 }
@@ -145,232 +170,188 @@ int CheckFile(FILE* log_file)
     return 0;
 }
 
-int DecodeErrors(FILE* log_file, unsigned long long sum_errcodes)
+int DecodeErrors(ULL sum_errcodes)
 {
-    if (CheckFile(log_file))
-        return FILEERROR;
-
     size_t max_errcode = floor(log2 (sum_errcodes));
 
     for (size_t errcode = 0; errcode <= max_errcode; errcode++)
     {
-        log_int(log_file, "Errcode", errcode);
-        log_int(log_file, "Bit Move of Errcode", 1 << errcode);
-        log_int(log_file, "Result of Bit Comparison", sum_errcodes & (1 << errcode));
-
         if (sum_errcodes & (1 << errcode))
         {
-            log(log_file, "Try to Log Error");
-
-            LogError(log_file, errcode);
+            LogError(errcode);
         }
     }
 
     return 0;
 }
 
-int LogError(FILE* log_file, int errcode)
+int LogError(int errcode)
 {
-    if (CheckFile(log_file))
-        return FILEERROR;
-
-    log_int(log_file, "errcode", errcode);
-
     switch (errcode)
     {
         case OK:
-            log_res_of_check(log_file, "Everything OK: Stack is all right and can be used");
+            //log_res_of_check(log_file, "Everything OK: Stack is all right and can be used");
             break;
 
         case SEGFAULT:
-            log_res_of_check(log_file, "SEGMENTATION FAULT: Invalid Pointer to Structure of Stack");
+            //log_res_of_check(log_file, "SEGMENTATION FAULT: Invalid Pointer to Structure of Stack");
             break;
 
         case ZOMBIE:
-            log_res_of_check(log_file, "DEADINSIDE ERROR: Stack doesn't exist");
+            //log_res_of_check(log_file, "DEADINSIDE ERROR: Stack doesn't exist");
             break;
 
         case NULLPTR:
-            log_res_of_check(log_file, "POINTER ERROR: Stack Pointer (pointer to buffer) is NULL");
+            //log_res_of_check(log_file, "POINTER ERROR: Stack Pointer (pointer to buffer) is NULL");
             break;
 
         case PTRPOISONED:
-            log_res_of_check(log_file, "POINTER ERROR: Invalid Stack Pointer (pointer to buffer)");
+            //log_res_of_check(log_file, "POINTER ERROR: Invalid Stack Pointer (pointer to buffer)");
             break;
 
         case NEGSIZE:
-            log_res_of_check(log_file, "SIZE ERROR: Stack Size has a Negative Value");
+            //log_res_of_check(log_file, "SIZE ERROR: Stack Size has a Negative Value");
             break;
 
         case SIZEPOISONED:
-            log_res_of_check(log_file, "SIZE ERROR: Stack Size is poisoned");
+            //log_res_of_check(log_file, "SIZE ERROR: Stack Size is poisoned");
             break;
 
         case NEGCAP:
-            log_res_of_check(log_file, "CAPACITY ERROR: Stack Capacity has a Negative Value");
+            //log_res_of_check(log_file, "CAPACITY ERROR: Stack Capacity has a Negative Value");
             break;
 
         case CAPPOISONED:
-            log_res_of_check(log_file, "CAPACITY ERROR: Stack Capacity is poisoned");
+            //log_res_of_check(log_file, "CAPACITY ERROR: Stack Capacity is poisoned");
             break;
 
         default:
-            log_res_of_check(log_file, "DECODE ERROR: Unexpected Error Code");
+            //log_res_of_check(log_file, "DECODE ERROR: Unexpected Error Code");
             return 1;
     }
 
     return 0;
 }
 
-int StackVerify(FILE* log_file, stack_t* stk)
+int StackVerify(stack_t* stk)
 {
-    unsigned long long sum_errcodes = FindErrors(stk);
+    ULL sum_errcodes = FindErrors(stk);
 
-    log_int(log_file, "Sum_errcodes", sum_errcodes);
+    log("Sum_errcodes: %d\n", sum_errcodes);
 
-    if (sum_errcodes < 1) //<0
+    if (sum_errcodes < 1)
     {
-        log(log_file, "SEARCH OF ERRORS ERROR: Invalid Sum of Error Codes");
+        print_log(FATAL_ERROR, "SEARCH OF ERRORS ERROR: Invalid Sum of Error Codes");
 
         return -1;
     }
 
-    DecodeErrors(log_file, sum_errcodes);
+    DecodeErrors(sum_errcodes);
 
     return 0;
 }
 
+void DumpExit()
+{
+    log("\n---------- EMERGENCY FINISH DUMP ----------\n\n");
+}
+
 int FuckingDump(stack_t* stk,
-                FILE* log_file,
                 const char* funcname,
                 const char* filename,
-                int   line)
+                int         line)
 {
-    if (CheckFile(log_file))
-        return FILEERROR;
-
-    fprintf(log_file, "\n\n++++++++++ Start Dump ++++++++++\n");
-
-    fflush(log_file);
+    log("\n\n++++++++++ Start Dump ++++++++++\n");
 
     if (stk == NULL)
     {
-        LogError(log_file, SEGFAULT);
+        LogError(SEGFAULT);
 
-        fprintf(log_file, "\n---------- EMERGENCY FINISH DUMP ----------\n\n");
-
-        fflush(log_file);
+        DumpExit();
 
         return SEGFAULT;
     }
 
     if (funcname == NULL || filename == NULL || line == NULL)
     {
-        log(log_file, "DEBUG INFO ERROR: Structure of Stack has invalid debug info");
-
-        fprintf(log_file, "\n---------- EMERGENCY FINISH DUMP ----------\n\n");
-
-        fflush(log_file);
-
-        return DEBUGINFOERROR;
-    }
-
-    fprintf(log_file, "\n%s at %s (line %d):\n",
-                       funcname,
-                       filename,
-                       line);
-
-    fflush(log_file);
-
-    fprintf(log_file, "Stack [0x%p] ", stk->Ptr);
-
-    fflush(log_file);
-
-    int err_code = 0;
-
-    if (!err_code) //verify_stack
-    {
-        fprintf(log_file, "OK\n");
+        log("STACKDUMP CALL ERROR: StackDump can't recognize parameters of call\n");
     }
     else
     {
-        fprintf(log_file, "ERROR\n");
+        log("\n%s at %s (line %d):\n", funcname, filename, line);
     }
 
-    fflush(log_file);
+    log("Stack [0x%p] ", stk->Ptr);
 
-    fprintf(log_file, "Originally '%s' from %s at %s (line %d): \n\n",
+    ULL sum_errcodes = StackVerify(stk);
+
+    if (sum_errcodes == 1)
+    {
+        log("OK\n");
+    }
+    else
+    {
+        log("ERROR\n");
+
+        DecodeErrors(sum_errcodes);
+    }
+
+    log("Originally '%s' from %s at %s (line %d): \n\n",
                        stk->debug_info.Orig_name,
                        stk->debug_info.Func_calling,
                        stk->debug_info.File_calling,
                        stk->debug_info.Line_created);
 
-    fflush(log_file);
-
-    fprintf(log_file, "Pointer:          %p\n"
-                      "Size:             %d\n"
-                      "Capacity:         %d\n"
-                      "DeadInside:       %d\n"
-                      "StackHashSum:     %d\n"
-                      "StructHashSum:    %d\n\n",
-                      stk->Ptr,
-                      stk->Size,
-                      stk->Capacity,
-                      stk->DeadInside,
-                      stk->StackHashSum,
-                      stk->StructHashSum);
-
-    fflush(log_file);
+    log("Pointer:          %p\n"
+        "Size:             %d\n"
+        "Capacity:         %d\n"
+        "DeadInside:       %d\n"
+        "StackHashSum:     %d\n"
+        "StructHashSum:    %d\n\n",
+        stk->Ptr,
+        stk->Size,
+        stk->Capacity,
+        stk->DeadInside,
+        stk->StackHashSum,
+        stk->StructHashSum);
 
     if (stk->Capacity <= 0 || stk->Capacity == getPoison(stk->Capacity))
     {
-        LogError(log_file, NEGCAP);
+        LogError(NEGCAP);
 
-        fprintf(log_file, "\n---------- EMERGENCY FINISH DUMP ----------\n\n");
-
-        fflush(log_file);
+        DumpExit();
 
         return CAPPOISONED;
     }
 
     if (stk->Ptr == NULL || stk->Ptr == getPoison(stk->Ptr))
     {
-        log(log_file, "POINTER ERROR: Bad Stack Pointer (pointer to buffer)");
+        log("POINTER ERROR: Bad Stack Pointer (pointer to buffer)");
 
-        fprintf(log_file, "\n---------- EMERGENCY FINISH DUMP ----------\n\n");
-
-        fflush(log_file);
+        DumpExit();
 
         return PTRPOISONED;
     }
 
-    fprintf(log_file, "{\n");
-
-    fflush(log_file);
+    log("{\n");
 
     int numbers_in_capacity = ceil(log10 ((double) stk->Capacity));
 
     for (size_t i = 0; i < stk->Capacity; i++)
     {
-        fprintf(log_file, "\t data[%0*d] = %p = %d\n", numbers_in_capacity, i, (stk->Ptr)[i]);
-
-        fflush(log_file);
+        log("\t data[%0*d] = %p = %d\n", numbers_in_capacity, i, (stk->Ptr)[i]);
     }
 
-    fprintf(log_file, "}\n\n");
+    log("}\n\n");
 
-    fflush(log_file);
-
-    fprintf(log_file, "\n---------- Finish Dump ----------\n\n");
-
-    fflush(log_file);
+    log("\n---------- Finish Dump ----------\n\n");
 
     return 0;
 };
 
-unsigned long long CalculateGNUHash(void* start_ptr, int num_bytes)
+ULL CalculateGNUHash(void* start_ptr, int num_bytes)
 {
-    unsigned long long hash_sum = START_HASH;
+    ULL hash_sum = START_HASH;
     for (size_t i = 0; i < num_bytes; i++)
     {
         hash_sum = hash_sum * 33 + ((char*)start_ptr)[i];
@@ -386,53 +367,62 @@ int UpdateHash(stack_t* stk)
     stk->StructHashSum    = CalculateGNUHash(stk, sizeof(stack_t));
 }
 
-int CheckLeftCannary(stack_t* stk)
+/*int CheckLeftStructCannary(stack_t* stk)
+{
+    if (stk->StructLeftCannary == LEFT_CANNARY)
+        return true;
+    return false;
+}
+
+int CheckRightStructCannary(stack_t* stk)
 {
     return true;
 }
+*/
 
-int CheckRightCannary(stack_t* stk)
-{
-    return true;
-}
-
-/*unsigned long long StackHash(stack_t* stk)
+/*ULL StackHash(stack_t* stk)
 {
     return CalculateGNUHash(stk->Ptr, stk->Size * sizeof(elem_t));
 }
 
-unsigned long long StructHash(stack_t* stk)
+ULL StructHash(stack_t* stk)
 {
     return CalculateGNUHash(stk, sizeof(stk));
 }*/
 
-static int StackIncrease(FILE* log_file, stack_t* stk)
+static int StackResize(stack_t* stk, size_t new_capacity)
 {
-    if (CheckFile(log_file))
-        return FILEERROR;
+    StackVerify(stk);
 
-    elem_t* temp_ptr = (elem_t*)realloc(stk->Ptr, stk->Capacity * 2 * sizeof(elem_t));
+    char* temp_ptr = (char*) realloc(stk->Ptr, new_capacity * sizeof(elem_t) + 2 * sizeof(ULL)); // Canary type
 
     if (temp_ptr == NULL)
     {
-        log_res_of_check(log_file, "REALLOCATION ERROR: Can't Find Such Amount of Dynamic Memory");
+        print_log(FATAL_ERROR, "REALLOCATION ERROR: Can't Find Such Amount of Dynamic Memory");
+
+        return REALLOCERROR;
     }
 
-    stk->Ptr = temp_ptr;
+    bird_t* ptr_left_bird  = (bird_t*) temp_ptr;
 
-    stk->Capacity = stk->Capacity * 2;
+    stk->Ptr            = (elem_t*)(temp_ptr + sizeof(bird_t));
 
-    for (size_t i = stk->Size; i < stk->Capacity; i++)
+    bird_t* ptr_right_bird = (bird_t*)(temp_ptr + sizeof(bird_t) + new_capacity * sizeof(elem_t));
+
+    if (new_capacity > stk->Capacity)
     {
-        stk->Ptr[i] = getPoison(stk->Ptr[0]);
+        for (size_t i = stk->Size; i < new_capacity; i++)
+        {
+            stk->Ptr[i] = getPoison(stk->Ptr[0]);
+        }
     }
 
-    Assert(stk->Ptr == NULL);
+    stk->Capacity = new_capacity;
 
     UpdateHash(stk);
 }
 
-static int StackDecrease(FILE* log_file, stack_t* stk)
+/*static int StackDecrease(FILE* log_file, stack_t* stk)
 {
     if (CheckFile(log_file))
         return FILEERROR;
@@ -451,47 +441,66 @@ static int StackDecrease(FILE* log_file, stack_t* stk)
     stk->Capacity = stk->Capacity / 2;
 
     UpdateHash(stk);
-}
+}*/
+
+// #define DEBUG
+// #if DEBUG
+//#ifndef DEBUG
 
 int StackCtor(stack_t* stk)
 {
     if (stk == NULL || stk == getPoison(stk))
     {
-        LogError(log_file, SEGFAULT);
+        LogError(SEGFAULT);
 
         return SEGFAULT;
     }
 
-    if (!(stk->DeadInside)) // include to LogError
+    if (!(stk->DeadInside))
     {
-        log_res_of_check(log_file, "CONSTRUCTION ERROR: Trying to Reconstruct an Existing Stack");
+        print_log(FATAL_ERROR, "CONSTRUCTION ERROR: Trying to Reconstruct an Existing Stack");
 
-        return -1;
+        return CONSTR_ERROR;
     }
 
-    elem_t* temp_ptr = (elem_t*) calloc(MIN_LEN_STACK, sizeof(elem_t)); //include to LogError
+    char* temp_ptr = (char*) calloc(MIN_LEN_STACK * sizeof(elem_t) + 2 * sizeof(bird_t), sizeof(char));
 
     if (temp_ptr == NULL)
     {
-        log_res_of_check(log_file, "REALLOCATION ERROR: Can't Find Such Amount of Dynamic Memory");
+        print_log(FATAL_ERROR, "REALLOCATION ERROR: Can't Find Such Amount of Dynamic Memory");
 
-        return -1;
+        return REALLOCERROR;
     }
 
-    stk->Ptr = temp_ptr;
+    bird_t* ptr_left_bird  = (bird_t*) temp_ptr;
+
+    stk->Ptr            = (elem_t*)(temp_ptr + sizeof(bird_t));
+
+    bird_t* ptr_right_bird = (bird_t*)(temp_ptr + sizeof(bird_t) + MIN_LEN_STACK * sizeof(elem_t));
+
+    stk->Ptr = (elem_t*) temp_ptr;
+
+    *ptr_left_bird = LEFT_CANNARY;
 
     stk->DeadInside       = 0;
     stk->Size             = 0;
     stk->Capacity         = MIN_LEN_STACK;
 
-    UpdateHash(stk);
+    *ptr_right_bird = LEFT_CANNARY;
 
-    return 0;
+    UpdateHash(stk);
 }
 
 int StackDtor(stack_t* stk)
 {
-    elem_t poison_for_buf = getPoison(stk->Ptr[0]); // Destroy the existing Stack check
+    if (stk->DeadInside)
+    {
+        print_log(FATAL_ERROR, "DESTRUCTION ERROR: Trying to Destruct a Dead Stack");
+
+        return DESTR_ERROR;
+    }
+
+    elem_t poison_for_buf = getPoison(stk->Ptr[0]);
 
     for (size_t i = 0; i < stk->Capacity; i++)
     {
@@ -506,19 +515,20 @@ int StackDtor(stack_t* stk)
     stk->StructHashSum = 0;
     stk->StructHashSum = CalculateGNUHash(stk, sizeof(stk));
 
+    free(stk->Ptr);
+
     UpdateHash(stk);
 }
 
-int StackPush(FILE* log_file, stack_t* stk, elem_t elem)
+int StackPush(stack_t* stk, elem_t elem)
 {
-    if (CheckFile(log_file))
-        return FILEERROR;
-
-    StackVerify(log_file, stk);
+    #if VERIFIER
+        StackVerify(stk);
+    #endif
 
     if (stk->Size >= stk->Capacity)
     {
-        StackIncrease(log_file, stk);
+        StackResize(stk, stk->Capacity * 2);
     }
     stk->Ptr[stk->Size] = elem;
 
@@ -529,11 +539,8 @@ int StackPush(FILE* log_file, stack_t* stk, elem_t elem)
     return 0;
 }
 
-elem_t StackPop(FILE* log_file, stack_t* stk)
-{
-    if (CheckFile(log_file))
-        return FILEERROR;
-
+elem_t StackPop(stack_t* stk)
+{   // verify
     elem_t elem = stk->Ptr[stk->Size - 1];
 
     stk->Ptr[stk->Size - 1] = getPoison(stk->Ptr[0]);
@@ -542,7 +549,7 @@ elem_t StackPop(FILE* log_file, stack_t* stk)
 
     if (stk->Size >= MIN_LEN_STACK && stk->Size <= stk->Capacity / 4)
     {
-        StackDecrease(log_file, stk);
+        StackResize(stk, stk->Capacity / 2);
     }
 
     UpdateHash(stk);

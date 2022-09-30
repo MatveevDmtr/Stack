@@ -1,5 +1,9 @@
-#include "macroses.h"
+#include "logging.h"
 
+static FILE* LOG_FILE = open_log();
+
+
+//start describing functions
 FILE* open_log()
 {
     FILE* log_file = fopen(LOG_NAME, "w");
@@ -11,23 +15,87 @@ FILE* open_log()
         return NULL;
     }
 
-    fprintf(log_file, "\n\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
-                      "Start program\n");
+    fprintf(log_file, "\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
+                          "--------------------Start program--------------------\n");
+    atexit(close_log);
 
     return log_file;
 }
 
-int close_log(FILE* log_file)
+void close_log()
 {
-    fprintf(log_file, "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
-                      "Finish program\n");
+    fprintf(LOG_FILE, "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
+                        "--------------------Finish program--------------------");
 
-    fclose(log_file);
+    fclose(LOG_FILE);
+}
 
-    /*if (log_file == NULL)
+int fprintf_log(size_t mode, char* text, ...)
+{
+    va_list params;
+
+    va_start(params, mode);
+
+    switch (mode)
     {
-        fprintf(stderr, "ERROR: log file not found while closing\n");
-    }*/
+        case SIMPLE:
+            log("%s\n", text);
+            break;
 
-    return 0;
+        case FATAL_ERROR:
+            PrintFatalError(va_arg(params, char*), text);
+            break;
+
+        case FILE_FUNC_N_LINE:
+            log("\nIn file %s: ", va_arg(params, char*));
+            break;
+    }
+
+    if (mode >= FUNC_N_LINE)
+    {
+        log("\n\tIn function: %s:", va_arg(params, char*));
+    }
+
+    if (mode >= N_LINE)
+    {
+        log("\n\t\tline %d: %s\n", va_arg(params, int), text);
+    }
+
+    va_end(params);
+}
+
+void PrintFatalError(char* func, char* text)
+{
+    int len_text = strlen(text);
+
+    log("\nIn %s: \n", func);
+
+    for (size_t i = 0; i < len_text + 4; i++)
+    {
+        fputc('-', LOG_FILE);
+    }
+
+    fputc('\n', LOG_FILE);
+
+    log("| %s |\n", text);
+
+    for (size_t i = 0; i < len_text + 4; i++)
+    {
+        fputc('-', LOG_FILE);
+    }
+
+    fputc('\n', LOG_FILE);
+
+    fflush(LOG_FILE);
+}
+
+void log(const char* format, ...)
+{
+    va_list args;
+
+    va_start (args, format);
+
+    vfprintf(LOG_FILE, format, args);
+
+    va_end(args);
 }

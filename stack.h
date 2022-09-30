@@ -3,58 +3,63 @@
 
 #include "StackConfig.h"
 
+// two headers: interface internal
+
+typedef unsigned long long ULL;
+
+typedef unsigned long long bird_t;
+
 typedef struct stack_info
 {
+    bird_t             StructLeftCannary;
     elem_t*            Ptr;
     size_t             Size;
     size_t             Capacity;
     bool               DeadInside;
-    unsigned long long StackHashSum;
-    unsigned long long StructHashSum;
+    ULL StackHashSum;
+    ULL StructHashSum;
 
     struct  calling_inf
     {
         const char* Orig_name;
         const char* Func_calling;
         const char* File_calling;
-        int         Line_created;    // size_t
+        size_t      Line_created;
     } debug_info;
+
+    bird_t StructRightCannary;
 }
 stack_t;
 
-int close_log(FILE* file);
+stack_t StructureStackInit(const char* name,
+                           const char* func,
+                           const char* file,
+                           int line);
 
-FILE* open_log();
-
-stack_t StructStackInit();
-
-int LogError(FILE* log_file, int errcode);
+int LogError(int errcode);
 
 int FuckingDump(stack_t* stk,
-              FILE* log_file,
-              const char* funcname,
-              const char* filename,
-              int line);
+                const char* funcname,
+                const char* filename,
+                int line);
 
-int StackPush(FILE* log_file, stack_t* stk, elem_t elem);
+int StackPush(stack_t* stk, elem_t elem);
 
 int StackCtor(stack_t* stk);
 
 int StackDtor(stack_t* stk);
 
-static int StackIncrease(FILE* log_file, stack_t* stk);
+static int StackResize(stack_t* stk, size_t new_capacity);
 
-static int StackDecrease(FILE* log_file, stack_t* stk);
+int StackPush(stack_t* stk, elem_t elem);
 
-int StackPush(FILE* log_file, stack_t* stk, elem_t elem);
+elem_t StackPop(stack_t* stk);
 
-elem_t StackPop(FILE* log_file, stack_t* stk);
+ULL CalculateGNUHash(void* start_ptr, int num_bytes);
 
-unsigned long long CalculateGNUHash(void* start_ptr, int num_bytes);
+ULL StackHash  (stack_t* stk);
 
-unsigned long long StackHash  (stack_t* stk);
-
-unsigned long long StructHash (stack_t* stk);
+ULL StructHash (stack_t* stk);
 
 int CheckLeftCannary  (stack_t* stk);
 
