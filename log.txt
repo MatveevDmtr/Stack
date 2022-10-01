@@ -8,21 +8,21 @@ Stk1 initialized
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 63):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 65):
 Stack [0xBAADF00D] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 374):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 389):
 ---------
 | ERROR |
 ---------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 386):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 401):
 -------------------------------------------------------
 | CANNARY ERROR: Ptr to Left Stack Cannary is invalid |
 -------------------------------------------------------
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 398):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 413):
 --------------------------------------------------------
 | CANNARY ERROR: Ptr to Right Stack Cannary is invalid |
 --------------------------------------------------------
@@ -36,7 +36,7 @@ StackHashSum:         0
 StructHashSum:        0
 
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 433):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 448):
 -------------------------------------------------------
 | CAPACITY ERROR: Stack Capacity has a Negative Value |
 -------------------------------------------------------
@@ -47,22 +47,22 @@ In int FuckingDump(stack_t*, const char*, const char*, int) (line 433):
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 67):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 69):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 0
 Capacity:             10
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DBA
-StackHashSum:         357247449
-StructHashSum:        -2039579217
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0DD8
+StackHashSum:         894433881
+StructHashSum:        -1051305171
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
@@ -87,22 +87,22 @@ Stack created
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 1
 Capacity:             10
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DBA
-StackHashSum:         357247449
-StructHashSum:        -2039579217
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0DD8
+StackHashSum:         894433881
+StructHashSum:        -1051305171
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
@@ -122,123 +122,119 @@ StackRightCannary:     ca115fa1
 
 ---------- Finish Dump ----------
 
-new capacity: 20
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 11
 Capacity:             20
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DC4
-StackHashSum:         1015136921
-StructHashSum:        -1967204570
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0E00
+StackHashSum:         -1312049356
+StructHashSum:        979599437
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =           1 =  (POISONED)
-	 data[12] =           1 =  (POISONED)
-	 data[13] =           1 =  (POISONED)
-	 data[14] =           1 =  (POISONED)
-	 data[15] =           1 =  (POISONED)
-	 data[16] =           1 =  (POISONED)
-	 data[17] =           1 =  (POISONED)
-	 data[18] =           1 =  (POISONED)
-	 data[19] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] = -1163005939 = BAADF00D (POISONED)
+	 data[12] = -1163005939 = BAADF00D (POISONED)
+	 data[13] = -1163005939 = BAADF00D (POISONED)
+	 data[14] = -1163005939 = BAADF00D (POISONED)
+	 data[15] = -1163005939 = BAADF00D (POISONED)
+	 data[16] = -1163005939 = BAADF00D (POISONED)
+	 data[17] = -1163005939 = BAADF00D (POISONED)
+	 data[18] = -1163005939 = BAADF00D (POISONED)
+	 data[19] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
-new capacity: 40
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 21
 Capacity:             40
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DD8
-StackHashSum:         -563431778
-StructHashSum:        -2007369701
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0E50
+StackHashSum:         -1458110505
+StructHashSum:        -1564746662
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =           1 =  (POISONED)
-	 data[22] =           1 =  (POISONED)
-	 data[23] =           1 =  (POISONED)
-	 data[24] =           1 =  (POISONED)
-	 data[25] =           1 =  (POISONED)
-	 data[26] =           1 =  (POISONED)
-	 data[27] =           1 =  (POISONED)
-	 data[28] =           1 =  (POISONED)
-	 data[29] =           1 =  (POISONED)
-	 data[30] =           1 =  (POISONED)
-	 data[31] =           1 =  (POISONED)
-	 data[32] =           1 =  (POISONED)
-	 data[33] =           1 =  (POISONED)
-	 data[34] =           1 =  (POISONED)
-	 data[35] =           1 =  (POISONED)
-	 data[36] =           1 =  (POISONED)
-	 data[37] =           1 =  (POISONED)
-	 data[38] =           1 =  (POISONED)
-	 data[39] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] = -1163005939 = BAADF00D (POISONED)
+	 data[22] = -1163005939 = BAADF00D (POISONED)
+	 data[23] = -1163005939 = BAADF00D (POISONED)
+	 data[24] = -1163005939 = BAADF00D (POISONED)
+	 data[25] = -1163005939 = BAADF00D (POISONED)
+	 data[26] = -1163005939 = BAADF00D (POISONED)
+	 data[27] = -1163005939 = BAADF00D (POISONED)
+	 data[28] = -1163005939 = BAADF00D (POISONED)
+	 data[29] = -1163005939 = BAADF00D (POISONED)
+	 data[30] = -1163005939 = BAADF00D (POISONED)
+	 data[31] = -1163005939 = BAADF00D (POISONED)
+	 data[32] = -1163005939 = BAADF00D (POISONED)
+	 data[33] = -1163005939 = BAADF00D (POISONED)
+	 data[34] = -1163005939 = BAADF00D (POISONED)
+	 data[35] = -1163005939 = BAADF00D (POISONED)
+	 data[36] = -1163005939 = BAADF00D (POISONED)
+	 data[37] = -1163005939 = BAADF00D (POISONED)
+	 data[38] = -1163005939 = BAADF00D (POISONED)
+	 data[39] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -248,178 +244,175 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 31
 Capacity:             40
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DD8
-StackHashSum:         -1367566413
-StructHashSum:        -2026838704
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0E50
+StackHashSum:         1058110094
+StructHashSum:        1929617873
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =          29 = 
-	 data[30] =          30 = 
-	 data[31] =           1 =  (POISONED)
-	 data[32] =           1 =  (POISONED)
-	 data[33] =           1 =  (POISONED)
-	 data[34] =           1 =  (POISONED)
-	 data[35] =           1 =  (POISONED)
-	 data[36] =           1 =  (POISONED)
-	 data[37] =           1 =  (POISONED)
-	 data[38] =           1 =  (POISONED)
-	 data[39] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] =          29 = 0000001D
+	 data[30] =          30 = 0000001E
+	 data[31] = -1163005939 = BAADF00D (POISONED)
+	 data[32] = -1163005939 = BAADF00D (POISONED)
+	 data[33] = -1163005939 = BAADF00D (POISONED)
+	 data[34] = -1163005939 = BAADF00D (POISONED)
+	 data[35] = -1163005939 = BAADF00D (POISONED)
+	 data[36] = -1163005939 = BAADF00D (POISONED)
+	 data[37] = -1163005939 = BAADF00D (POISONED)
+	 data[38] = -1163005939 = BAADF00D (POISONED)
+	 data[39] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
-new capacity: 80
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 41
 Capacity:             80
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E00
-StackHashSum:         164294996
-StructHashSum:        1295194288
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0EF0
+StackHashSum:         -1517680951
+StructHashSum:        1196081289
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =          29 = 
-	 data[30] =          30 = 
-	 data[31] =          31 = 
-	 data[32] =          32 =  
-	 data[33] =          33 = !
-	 data[34] =          34 = "
-	 data[35] =          35 = #
-	 data[36] =          36 = $
-	 data[37] =          37 = %
-	 data[38] =          38 = &
-	 data[39] =          39 = '
-	 data[40] =          40 = (
-	 data[41] =           1 =  (POISONED)
-	 data[42] =           1 =  (POISONED)
-	 data[43] =           1 =  (POISONED)
-	 data[44] =           1 =  (POISONED)
-	 data[45] =           1 =  (POISONED)
-	 data[46] =           1 =  (POISONED)
-	 data[47] =           1 =  (POISONED)
-	 data[48] =           1 =  (POISONED)
-	 data[49] =           1 =  (POISONED)
-	 data[50] =           1 =  (POISONED)
-	 data[51] =           1 =  (POISONED)
-	 data[52] =           1 =  (POISONED)
-	 data[53] =           1 =  (POISONED)
-	 data[54] =           1 =  (POISONED)
-	 data[55] =           1 =  (POISONED)
-	 data[56] =           1 =  (POISONED)
-	 data[57] =           1 =  (POISONED)
-	 data[58] =           1 =  (POISONED)
-	 data[59] =           1 =  (POISONED)
-	 data[60] =           1 =  (POISONED)
-	 data[61] =           1 =  (POISONED)
-	 data[62] =           1 =  (POISONED)
-	 data[63] =           1 =  (POISONED)
-	 data[64] =           1 =  (POISONED)
-	 data[65] =           1 =  (POISONED)
-	 data[66] =           1 =  (POISONED)
-	 data[67] =           1 =  (POISONED)
-	 data[68] =           1 =  (POISONED)
-	 data[69] =           1 =  (POISONED)
-	 data[70] =           1 =  (POISONED)
-	 data[71] =           1 =  (POISONED)
-	 data[72] =           1 =  (POISONED)
-	 data[73] =           1 =  (POISONED)
-	 data[74] =           1 =  (POISONED)
-	 data[75] =           1 =  (POISONED)
-	 data[76] =           1 =  (POISONED)
-	 data[77] =           1 =  (POISONED)
-	 data[78] =           1 =  (POISONED)
-	 data[79] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] =          29 = 0000001D
+	 data[30] =          30 = 0000001E
+	 data[31] =          31 = 0000001F
+	 data[32] =          32 = 00000020
+	 data[33] =          33 = 00000021
+	 data[34] =          34 = 00000022
+	 data[35] =          35 = 00000023
+	 data[36] =          36 = 00000024
+	 data[37] =          37 = 00000025
+	 data[38] =          38 = 00000026
+	 data[39] =          39 = 00000027
+	 data[40] =          40 = 00000028
+	 data[41] = -1163005939 = BAADF00D (POISONED)
+	 data[42] = -1163005939 = BAADF00D (POISONED)
+	 data[43] = -1163005939 = BAADF00D (POISONED)
+	 data[44] = -1163005939 = BAADF00D (POISONED)
+	 data[45] = -1163005939 = BAADF00D (POISONED)
+	 data[46] = -1163005939 = BAADF00D (POISONED)
+	 data[47] = -1163005939 = BAADF00D (POISONED)
+	 data[48] = -1163005939 = BAADF00D (POISONED)
+	 data[49] = -1163005939 = BAADF00D (POISONED)
+	 data[50] = -1163005939 = BAADF00D (POISONED)
+	 data[51] = -1163005939 = BAADF00D (POISONED)
+	 data[52] = -1163005939 = BAADF00D (POISONED)
+	 data[53] = -1163005939 = BAADF00D (POISONED)
+	 data[54] = -1163005939 = BAADF00D (POISONED)
+	 data[55] = -1163005939 = BAADF00D (POISONED)
+	 data[56] = -1163005939 = BAADF00D (POISONED)
+	 data[57] = -1163005939 = BAADF00D (POISONED)
+	 data[58] = -1163005939 = BAADF00D (POISONED)
+	 data[59] = -1163005939 = BAADF00D (POISONED)
+	 data[60] = -1163005939 = BAADF00D (POISONED)
+	 data[61] = -1163005939 = BAADF00D (POISONED)
+	 data[62] = -1163005939 = BAADF00D (POISONED)
+	 data[63] = -1163005939 = BAADF00D (POISONED)
+	 data[64] = -1163005939 = BAADF00D (POISONED)
+	 data[65] = -1163005939 = BAADF00D (POISONED)
+	 data[66] = -1163005939 = BAADF00D (POISONED)
+	 data[67] = -1163005939 = BAADF00D (POISONED)
+	 data[68] = -1163005939 = BAADF00D (POISONED)
+	 data[69] = -1163005939 = BAADF00D (POISONED)
+	 data[70] = -1163005939 = BAADF00D (POISONED)
+	 data[71] = -1163005939 = BAADF00D (POISONED)
+	 data[72] = -1163005939 = BAADF00D (POISONED)
+	 data[73] = -1163005939 = BAADF00D (POISONED)
+	 data[74] = -1163005939 = BAADF00D (POISONED)
+	 data[75] = -1163005939 = BAADF00D (POISONED)
+	 data[76] = -1163005939 = BAADF00D (POISONED)
+	 data[77] = -1163005939 = BAADF00D (POISONED)
+	 data[78] = -1163005939 = BAADF00D (POISONED)
+	 data[79] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -429,107 +422,106 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 51
 Capacity:             80
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E00
-StackHashSum:         -1997865679
-StructHashSum:        253424572
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0EF0
+StackHashSum:         -99569336
+StructHashSum:        -610326966
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =          29 = 
-	 data[30] =          30 = 
-	 data[31] =          31 = 
-	 data[32] =          32 =  
-	 data[33] =          33 = !
-	 data[34] =          34 = "
-	 data[35] =          35 = #
-	 data[36] =          36 = $
-	 data[37] =          37 = %
-	 data[38] =          38 = &
-	 data[39] =          39 = '
-	 data[40] =          40 = (
-	 data[41] =          41 = )
-	 data[42] =          42 = *
-	 data[43] =          43 = +
-	 data[44] =          44 = ,
-	 data[45] =          45 = -
-	 data[46] =          46 = .
-	 data[47] =          47 = /
-	 data[48] =          48 = 0
-	 data[49] =          49 = 1
-	 data[50] =          50 = 2
-	 data[51] =           1 =  (POISONED)
-	 data[52] =           1 =  (POISONED)
-	 data[53] =           1 =  (POISONED)
-	 data[54] =           1 =  (POISONED)
-	 data[55] =           1 =  (POISONED)
-	 data[56] =           1 =  (POISONED)
-	 data[57] =           1 =  (POISONED)
-	 data[58] =           1 =  (POISONED)
-	 data[59] =           1 =  (POISONED)
-	 data[60] =           1 =  (POISONED)
-	 data[61] =           1 =  (POISONED)
-	 data[62] =           1 =  (POISONED)
-	 data[63] =           1 =  (POISONED)
-	 data[64] =           1 =  (POISONED)
-	 data[65] =           1 =  (POISONED)
-	 data[66] =           1 =  (POISONED)
-	 data[67] =           1 =  (POISONED)
-	 data[68] =           1 =  (POISONED)
-	 data[69] =           1 =  (POISONED)
-	 data[70] =           1 =  (POISONED)
-	 data[71] =           1 =  (POISONED)
-	 data[72] =           1 =  (POISONED)
-	 data[73] =           1 =  (POISONED)
-	 data[74] =           1 =  (POISONED)
-	 data[75] =           1 =  (POISONED)
-	 data[76] =           1 =  (POISONED)
-	 data[77] =           1 =  (POISONED)
-	 data[78] =           1 =  (POISONED)
-	 data[79] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] =          29 = 0000001D
+	 data[30] =          30 = 0000001E
+	 data[31] =          31 = 0000001F
+	 data[32] =          32 = 00000020
+	 data[33] =          33 = 00000021
+	 data[34] =          34 = 00000022
+	 data[35] =          35 = 00000023
+	 data[36] =          36 = 00000024
+	 data[37] =          37 = 00000025
+	 data[38] =          38 = 00000026
+	 data[39] =          39 = 00000027
+	 data[40] =          40 = 00000028
+	 data[41] =          41 = 00000029
+	 data[42] =          42 = 0000002A
+	 data[43] =          43 = 0000002B
+	 data[44] =          44 = 0000002C
+	 data[45] =          45 = 0000002D
+	 data[46] =          46 = 0000002E
+	 data[47] =          47 = 0000002F
+	 data[48] =          48 = 00000030
+	 data[49] =          49 = 00000031
+	 data[50] =          50 = 00000032
+	 data[51] = -1163005939 = BAADF00D (POISONED)
+	 data[52] = -1163005939 = BAADF00D (POISONED)
+	 data[53] = -1163005939 = BAADF00D (POISONED)
+	 data[54] = -1163005939 = BAADF00D (POISONED)
+	 data[55] = -1163005939 = BAADF00D (POISONED)
+	 data[56] = -1163005939 = BAADF00D (POISONED)
+	 data[57] = -1163005939 = BAADF00D (POISONED)
+	 data[58] = -1163005939 = BAADF00D (POISONED)
+	 data[59] = -1163005939 = BAADF00D (POISONED)
+	 data[60] = -1163005939 = BAADF00D (POISONED)
+	 data[61] = -1163005939 = BAADF00D (POISONED)
+	 data[62] = -1163005939 = BAADF00D (POISONED)
+	 data[63] = -1163005939 = BAADF00D (POISONED)
+	 data[64] = -1163005939 = BAADF00D (POISONED)
+	 data[65] = -1163005939 = BAADF00D (POISONED)
+	 data[66] = -1163005939 = BAADF00D (POISONED)
+	 data[67] = -1163005939 = BAADF00D (POISONED)
+	 data[68] = -1163005939 = BAADF00D (POISONED)
+	 data[69] = -1163005939 = BAADF00D (POISONED)
+	 data[70] = -1163005939 = BAADF00D (POISONED)
+	 data[71] = -1163005939 = BAADF00D (POISONED)
+	 data[72] = -1163005939 = BAADF00D (POISONED)
+	 data[73] = -1163005939 = BAADF00D (POISONED)
+	 data[74] = -1163005939 = BAADF00D (POISONED)
+	 data[75] = -1163005939 = BAADF00D (POISONED)
+	 data[76] = -1163005939 = BAADF00D (POISONED)
+	 data[77] = -1163005939 = BAADF00D (POISONED)
+	 data[78] = -1163005939 = BAADF00D (POISONED)
+	 data[79] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -539,107 +531,106 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 61
 Capacity:             80
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E00
-StackHashSum:         715764466
-StructHashSum:        -602292098
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0EF0
+StackHashSum:         -1622044245
+StructHashSum:        -425940662
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =          29 = 
-	 data[30] =          30 = 
-	 data[31] =          31 = 
-	 data[32] =          32 =  
-	 data[33] =          33 = !
-	 data[34] =          34 = "
-	 data[35] =          35 = #
-	 data[36] =          36 = $
-	 data[37] =          37 = %
-	 data[38] =          38 = &
-	 data[39] =          39 = '
-	 data[40] =          40 = (
-	 data[41] =          41 = )
-	 data[42] =          42 = *
-	 data[43] =          43 = +
-	 data[44] =          44 = ,
-	 data[45] =          45 = -
-	 data[46] =          46 = .
-	 data[47] =          47 = /
-	 data[48] =          48 = 0
-	 data[49] =          49 = 1
-	 data[50] =          50 = 2
-	 data[51] =          51 = 3
-	 data[52] =          52 = 4
-	 data[53] =          53 = 5
-	 data[54] =          54 = 6
-	 data[55] =          55 = 7
-	 data[56] =          56 = 8
-	 data[57] =          57 = 9
-	 data[58] =          58 = :
-	 data[59] =          59 = ;
-	 data[60] =          60 = <
-	 data[61] =           1 =  (POISONED)
-	 data[62] =           1 =  (POISONED)
-	 data[63] =           1 =  (POISONED)
-	 data[64] =           1 =  (POISONED)
-	 data[65] =           1 =  (POISONED)
-	 data[66] =           1 =  (POISONED)
-	 data[67] =           1 =  (POISONED)
-	 data[68] =           1 =  (POISONED)
-	 data[69] =           1 =  (POISONED)
-	 data[70] =           1 =  (POISONED)
-	 data[71] =           1 =  (POISONED)
-	 data[72] =           1 =  (POISONED)
-	 data[73] =           1 =  (POISONED)
-	 data[74] =           1 =  (POISONED)
-	 data[75] =           1 =  (POISONED)
-	 data[76] =           1 =  (POISONED)
-	 data[77] =           1 =  (POISONED)
-	 data[78] =           1 =  (POISONED)
-	 data[79] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] =          29 = 0000001D
+	 data[30] =          30 = 0000001E
+	 data[31] =          31 = 0000001F
+	 data[32] =          32 = 00000020
+	 data[33] =          33 = 00000021
+	 data[34] =          34 = 00000022
+	 data[35] =          35 = 00000023
+	 data[36] =          36 = 00000024
+	 data[37] =          37 = 00000025
+	 data[38] =          38 = 00000026
+	 data[39] =          39 = 00000027
+	 data[40] =          40 = 00000028
+	 data[41] =          41 = 00000029
+	 data[42] =          42 = 0000002A
+	 data[43] =          43 = 0000002B
+	 data[44] =          44 = 0000002C
+	 data[45] =          45 = 0000002D
+	 data[46] =          46 = 0000002E
+	 data[47] =          47 = 0000002F
+	 data[48] =          48 = 00000030
+	 data[49] =          49 = 00000031
+	 data[50] =          50 = 00000032
+	 data[51] =          51 = 00000033
+	 data[52] =          52 = 00000034
+	 data[53] =          53 = 00000035
+	 data[54] =          54 = 00000036
+	 data[55] =          55 = 00000037
+	 data[56] =          56 = 00000038
+	 data[57] =          57 = 00000039
+	 data[58] =          58 = 0000003A
+	 data[59] =          59 = 0000003B
+	 data[60] =          60 = 0000003C
+	 data[61] = -1163005939 = BAADF00D (POISONED)
+	 data[62] = -1163005939 = BAADF00D (POISONED)
+	 data[63] = -1163005939 = BAADF00D (POISONED)
+	 data[64] = -1163005939 = BAADF00D (POISONED)
+	 data[65] = -1163005939 = BAADF00D (POISONED)
+	 data[66] = -1163005939 = BAADF00D (POISONED)
+	 data[67] = -1163005939 = BAADF00D (POISONED)
+	 data[68] = -1163005939 = BAADF00D (POISONED)
+	 data[69] = -1163005939 = BAADF00D (POISONED)
+	 data[70] = -1163005939 = BAADF00D (POISONED)
+	 data[71] = -1163005939 = BAADF00D (POISONED)
+	 data[72] = -1163005939 = BAADF00D (POISONED)
+	 data[73] = -1163005939 = BAADF00D (POISONED)
+	 data[74] = -1163005939 = BAADF00D (POISONED)
+	 data[75] = -1163005939 = BAADF00D (POISONED)
+	 data[76] = -1163005939 = BAADF00D (POISONED)
+	 data[77] = -1163005939 = BAADF00D (POISONED)
+	 data[78] = -1163005939 = BAADF00D (POISONED)
+	 data[79] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -649,298 +640,295 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 71
 Capacity:             80
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E00
-StackHashSum:         878897303
-StructHashSum:        2144800263
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0EF0
+StackHashSum:         1463631858
+StructHashSum:        750385384
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =          29 = 
-	 data[30] =          30 = 
-	 data[31] =          31 = 
-	 data[32] =          32 =  
-	 data[33] =          33 = !
-	 data[34] =          34 = "
-	 data[35] =          35 = #
-	 data[36] =          36 = $
-	 data[37] =          37 = %
-	 data[38] =          38 = &
-	 data[39] =          39 = '
-	 data[40] =          40 = (
-	 data[41] =          41 = )
-	 data[42] =          42 = *
-	 data[43] =          43 = +
-	 data[44] =          44 = ,
-	 data[45] =          45 = -
-	 data[46] =          46 = .
-	 data[47] =          47 = /
-	 data[48] =          48 = 0
-	 data[49] =          49 = 1
-	 data[50] =          50 = 2
-	 data[51] =          51 = 3
-	 data[52] =          52 = 4
-	 data[53] =          53 = 5
-	 data[54] =          54 = 6
-	 data[55] =          55 = 7
-	 data[56] =          56 = 8
-	 data[57] =          57 = 9
-	 data[58] =          58 = :
-	 data[59] =          59 = ;
-	 data[60] =          60 = <
-	 data[61] =          61 = =
-	 data[62] =          62 = >
-	 data[63] =          63 = ?
-	 data[64] =          64 = @
-	 data[65] =          65 = A
-	 data[66] =          66 = B
-	 data[67] =          67 = C
-	 data[68] =          68 = D
-	 data[69] =          69 = E
-	 data[70] =          70 = F
-	 data[71] =           1 =  (POISONED)
-	 data[72] =           1 =  (POISONED)
-	 data[73] =           1 =  (POISONED)
-	 data[74] =           1 =  (POISONED)
-	 data[75] =           1 =  (POISONED)
-	 data[76] =           1 =  (POISONED)
-	 data[77] =           1 =  (POISONED)
-	 data[78] =           1 =  (POISONED)
-	 data[79] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] =          29 = 0000001D
+	 data[30] =          30 = 0000001E
+	 data[31] =          31 = 0000001F
+	 data[32] =          32 = 00000020
+	 data[33] =          33 = 00000021
+	 data[34] =          34 = 00000022
+	 data[35] =          35 = 00000023
+	 data[36] =          36 = 00000024
+	 data[37] =          37 = 00000025
+	 data[38] =          38 = 00000026
+	 data[39] =          39 = 00000027
+	 data[40] =          40 = 00000028
+	 data[41] =          41 = 00000029
+	 data[42] =          42 = 0000002A
+	 data[43] =          43 = 0000002B
+	 data[44] =          44 = 0000002C
+	 data[45] =          45 = 0000002D
+	 data[46] =          46 = 0000002E
+	 data[47] =          47 = 0000002F
+	 data[48] =          48 = 00000030
+	 data[49] =          49 = 00000031
+	 data[50] =          50 = 00000032
+	 data[51] =          51 = 00000033
+	 data[52] =          52 = 00000034
+	 data[53] =          53 = 00000035
+	 data[54] =          54 = 00000036
+	 data[55] =          55 = 00000037
+	 data[56] =          56 = 00000038
+	 data[57] =          57 = 00000039
+	 data[58] =          58 = 0000003A
+	 data[59] =          59 = 0000003B
+	 data[60] =          60 = 0000003C
+	 data[61] =          61 = 0000003D
+	 data[62] =          62 = 0000003E
+	 data[63] =          63 = 0000003F
+	 data[64] =          64 = 00000040
+	 data[65] =          65 = 00000041
+	 data[66] =          66 = 00000042
+	 data[67] =          67 = 00000043
+	 data[68] =          68 = 00000044
+	 data[69] =          69 = 00000045
+	 data[70] =          70 = 00000046
+	 data[71] = -1163005939 = BAADF00D (POISONED)
+	 data[72] = -1163005939 = BAADF00D (POISONED)
+	 data[73] = -1163005939 = BAADF00D (POISONED)
+	 data[74] = -1163005939 = BAADF00D (POISONED)
+	 data[75] = -1163005939 = BAADF00D (POISONED)
+	 data[76] = -1163005939 = BAADF00D (POISONED)
+	 data[77] = -1163005939 = BAADF00D (POISONED)
+	 data[78] = -1163005939 = BAADF00D (POISONED)
+	 data[79] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
-new capacity: 160
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 81
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         -1126375056
-StructHashSum:        -703197497
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         -2035766435
+StructHashSum:        -61508454
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =          59 = ;
-	 data[060] =          60 = <
-	 data[061] =          61 = =
-	 data[062] =          62 = >
-	 data[063] =          63 = ?
-	 data[064] =          64 = @
-	 data[065] =          65 = A
-	 data[066] =          66 = B
-	 data[067] =          67 = C
-	 data[068] =          68 = D
-	 data[069] =          69 = E
-	 data[070] =          70 = F
-	 data[071] =          71 = G
-	 data[072] =          72 = H
-	 data[073] =          73 = I
-	 data[074] =          74 = J
-	 data[075] =          75 = K
-	 data[076] =          76 = L
-	 data[077] =          77 = M
-	 data[078] =          78 = N
-	 data[079] =          79 = O
-	 data[080] =          80 = P
-	 data[081] =           1 =  (POISONED)
-	 data[082] =           1 =  (POISONED)
-	 data[083] =           1 =  (POISONED)
-	 data[084] =           1 =  (POISONED)
-	 data[085] =           1 =  (POISONED)
-	 data[086] =           1 =  (POISONED)
-	 data[087] =           1 =  (POISONED)
-	 data[088] =           1 =  (POISONED)
-	 data[089] =           1 =  (POISONED)
-	 data[090] =           1 =  (POISONED)
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] =          59 = 0000003B
+	 data[060] =          60 = 0000003C
+	 data[061] =          61 = 0000003D
+	 data[062] =          62 = 0000003E
+	 data[063] =          63 = 0000003F
+	 data[064] =          64 = 00000040
+	 data[065] =          65 = 00000041
+	 data[066] =          66 = 00000042
+	 data[067] =          67 = 00000043
+	 data[068] =          68 = 00000044
+	 data[069] =          69 = 00000045
+	 data[070] =          70 = 00000046
+	 data[071] =          71 = 00000047
+	 data[072] =          72 = 00000048
+	 data[073] =          73 = 00000049
+	 data[074] =          74 = 0000004A
+	 data[075] =          75 = 0000004B
+	 data[076] =          76 = 0000004C
+	 data[077] =          77 = 0000004D
+	 data[078] =          78 = 0000004E
+	 data[079] =          79 = 0000004F
+	 data[080] =          80 = 00000050
+	 data[081] = -1163005939 = BAADF00D (POISONED)
+	 data[082] = -1163005939 = BAADF00D (POISONED)
+	 data[083] = -1163005939 = BAADF00D (POISONED)
+	 data[084] = -1163005939 = BAADF00D (POISONED)
+	 data[085] = -1163005939 = BAADF00D (POISONED)
+	 data[086] = -1163005939 = BAADF00D (POISONED)
+	 data[087] = -1163005939 = BAADF00D (POISONED)
+	 data[088] = -1163005939 = BAADF00D (POISONED)
+	 data[089] = -1163005939 = BAADF00D (POISONED)
+	 data[090] = -1163005939 = BAADF00D (POISONED)
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -950,187 +938,186 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 77):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 79):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 91
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         880392925
-StructHashSum:        1561378026
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         731420012
+StructHashSum:        -1963407766
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =          59 = ;
-	 data[060] =          60 = <
-	 data[061] =          61 = =
-	 data[062] =          62 = >
-	 data[063] =          63 = ?
-	 data[064] =          64 = @
-	 data[065] =          65 = A
-	 data[066] =          66 = B
-	 data[067] =          67 = C
-	 data[068] =          68 = D
-	 data[069] =          69 = E
-	 data[070] =          70 = F
-	 data[071] =          71 = G
-	 data[072] =          72 = H
-	 data[073] =          73 = I
-	 data[074] =          74 = J
-	 data[075] =          75 = K
-	 data[076] =          76 = L
-	 data[077] =          77 = M
-	 data[078] =          78 = N
-	 data[079] =          79 = O
-	 data[080] =          80 = P
-	 data[081] =          81 = Q
-	 data[082] =          82 = R
-	 data[083] =          83 = S
-	 data[084] =          84 = T
-	 data[085] =          85 = U
-	 data[086] =          86 = V
-	 data[087] =          87 = W
-	 data[088] =          88 = X
-	 data[089] =          89 = Y
-	 data[090] =          90 = Z
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] =          59 = 0000003B
+	 data[060] =          60 = 0000003C
+	 data[061] =          61 = 0000003D
+	 data[062] =          62 = 0000003E
+	 data[063] =          63 = 0000003F
+	 data[064] =          64 = 00000040
+	 data[065] =          65 = 00000041
+	 data[066] =          66 = 00000042
+	 data[067] =          67 = 00000043
+	 data[068] =          68 = 00000044
+	 data[069] =          69 = 00000045
+	 data[070] =          70 = 00000046
+	 data[071] =          71 = 00000047
+	 data[072] =          72 = 00000048
+	 data[073] =          73 = 00000049
+	 data[074] =          74 = 0000004A
+	 data[075] =          75 = 0000004B
+	 data[076] =          76 = 0000004C
+	 data[077] =          77 = 0000004D
+	 data[078] =          78 = 0000004E
+	 data[079] =          79 = 0000004F
+	 data[080] =          80 = 00000050
+	 data[081] =          81 = 00000051
+	 data[082] =          82 = 00000052
+	 data[083] =          83 = 00000053
+	 data[084] =          84 = 00000054
+	 data[085] =          85 = 00000055
+	 data[086] =          86 = 00000056
+	 data[087] =          87 = 00000057
+	 data[088] =          88 = 00000058
+	 data[089] =          89 = 00000059
+	 data[090] =          90 = 0000005A
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -1140,187 +1127,186 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 99
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         -132830391
-StructHashSum:        -1695999357
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         394365120
+StructHashSum:        -1783208767
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =          59 = ;
-	 data[060] =          60 = <
-	 data[061] =          61 = =
-	 data[062] =          62 = >
-	 data[063] =          63 = ?
-	 data[064] =          64 = @
-	 data[065] =          65 = A
-	 data[066] =          66 = B
-	 data[067] =          67 = C
-	 data[068] =          68 = D
-	 data[069] =          69 = E
-	 data[070] =          70 = F
-	 data[071] =          71 = G
-	 data[072] =          72 = H
-	 data[073] =          73 = I
-	 data[074] =          74 = J
-	 data[075] =          75 = K
-	 data[076] =          76 = L
-	 data[077] =          77 = M
-	 data[078] =          78 = N
-	 data[079] =          79 = O
-	 data[080] =          80 = P
-	 data[081] =          81 = Q
-	 data[082] =          82 = R
-	 data[083] =          83 = S
-	 data[084] =          84 = T
-	 data[085] =          85 = U
-	 data[086] =          86 = V
-	 data[087] =          87 = W
-	 data[088] =          88 = X
-	 data[089] =          89 = Y
-	 data[090] =          90 = Z
-	 data[091] =          91 = [
-	 data[092] =          92 = \
-	 data[093] =          93 = ]
-	 data[094] =          94 = ^
-	 data[095] =          95 = _
-	 data[096] =          96 = `
-	 data[097] =          97 = a
-	 data[098] =          98 = b
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] =          59 = 0000003B
+	 data[060] =          60 = 0000003C
+	 data[061] =          61 = 0000003D
+	 data[062] =          62 = 0000003E
+	 data[063] =          63 = 0000003F
+	 data[064] =          64 = 00000040
+	 data[065] =          65 = 00000041
+	 data[066] =          66 = 00000042
+	 data[067] =          67 = 00000043
+	 data[068] =          68 = 00000044
+	 data[069] =          69 = 00000045
+	 data[070] =          70 = 00000046
+	 data[071] =          71 = 00000047
+	 data[072] =          72 = 00000048
+	 data[073] =          73 = 00000049
+	 data[074] =          74 = 0000004A
+	 data[075] =          75 = 0000004B
+	 data[076] =          76 = 0000004C
+	 data[077] =          77 = 0000004D
+	 data[078] =          78 = 0000004E
+	 data[079] =          79 = 0000004F
+	 data[080] =          80 = 00000050
+	 data[081] =          81 = 00000051
+	 data[082] =          82 = 00000052
+	 data[083] =          83 = 00000053
+	 data[084] =          84 = 00000054
+	 data[085] =          85 = 00000055
+	 data[086] =          86 = 00000056
+	 data[087] =          87 = 00000057
+	 data[088] =          88 = 00000058
+	 data[089] =          89 = 00000059
+	 data[090] =          90 = 0000005A
+	 data[091] =          91 = 0000005B
+	 data[092] =          92 = 0000005C
+	 data[093] =          93 = 0000005D
+	 data[094] =          94 = 0000005E
+	 data[095] =          95 = 0000005F
+	 data[096] =          96 = 00000060
+	 data[097] =          97 = 00000061
+	 data[098] =          98 = 00000062
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -1330,187 +1316,186 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 89
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         -1247416436
-StructHashSum:        -1719123087
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         -1884884895
+StructHashSum:        849486949
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =          59 = ;
-	 data[060] =          60 = <
-	 data[061] =          61 = =
-	 data[062] =          62 = >
-	 data[063] =          63 = ?
-	 data[064] =          64 = @
-	 data[065] =          65 = A
-	 data[066] =          66 = B
-	 data[067] =          67 = C
-	 data[068] =          68 = D
-	 data[069] =          69 = E
-	 data[070] =          70 = F
-	 data[071] =          71 = G
-	 data[072] =          72 = H
-	 data[073] =          73 = I
-	 data[074] =          74 = J
-	 data[075] =          75 = K
-	 data[076] =          76 = L
-	 data[077] =          77 = M
-	 data[078] =          78 = N
-	 data[079] =          79 = O
-	 data[080] =          80 = P
-	 data[081] =          81 = Q
-	 data[082] =          82 = R
-	 data[083] =          83 = S
-	 data[084] =          84 = T
-	 data[085] =          85 = U
-	 data[086] =          86 = V
-	 data[087] =          87 = W
-	 data[088] =          88 = X
-	 data[089] =           1 =  (POISONED)
-	 data[090] =           1 =  (POISONED)
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] =          59 = 0000003B
+	 data[060] =          60 = 0000003C
+	 data[061] =          61 = 0000003D
+	 data[062] =          62 = 0000003E
+	 data[063] =          63 = 0000003F
+	 data[064] =          64 = 00000040
+	 data[065] =          65 = 00000041
+	 data[066] =          66 = 00000042
+	 data[067] =          67 = 00000043
+	 data[068] =          68 = 00000044
+	 data[069] =          69 = 00000045
+	 data[070] =          70 = 00000046
+	 data[071] =          71 = 00000047
+	 data[072] =          72 = 00000048
+	 data[073] =          73 = 00000049
+	 data[074] =          74 = 0000004A
+	 data[075] =          75 = 0000004B
+	 data[076] =          76 = 0000004C
+	 data[077] =          77 = 0000004D
+	 data[078] =          78 = 0000004E
+	 data[079] =          79 = 0000004F
+	 data[080] =          80 = 00000050
+	 data[081] =          81 = 00000051
+	 data[082] =          82 = 00000052
+	 data[083] =          83 = 00000053
+	 data[084] =          84 = 00000054
+	 data[085] =          85 = 00000055
+	 data[086] =          86 = 00000056
+	 data[087] =          87 = 00000057
+	 data[088] =          88 = 00000058
+	 data[089] = -1163005939 = BAADF00D (POISONED)
+	 data[090] = -1163005939 = BAADF00D (POISONED)
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -1520,187 +1505,186 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 79
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         972586931
-StructHashSum:        -298965958
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         -1236478490
+StructHashSum:        1052718873
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =          59 = ;
-	 data[060] =          60 = <
-	 data[061] =          61 = =
-	 data[062] =          62 = >
-	 data[063] =          63 = ?
-	 data[064] =          64 = @
-	 data[065] =          65 = A
-	 data[066] =          66 = B
-	 data[067] =          67 = C
-	 data[068] =          68 = D
-	 data[069] =          69 = E
-	 data[070] =          70 = F
-	 data[071] =          71 = G
-	 data[072] =          72 = H
-	 data[073] =          73 = I
-	 data[074] =          74 = J
-	 data[075] =          75 = K
-	 data[076] =          76 = L
-	 data[077] =          77 = M
-	 data[078] =          78 = N
-	 data[079] =           1 =  (POISONED)
-	 data[080] =           1 =  (POISONED)
-	 data[081] =           1 =  (POISONED)
-	 data[082] =           1 =  (POISONED)
-	 data[083] =           1 =  (POISONED)
-	 data[084] =           1 =  (POISONED)
-	 data[085] =           1 =  (POISONED)
-	 data[086] =           1 =  (POISONED)
-	 data[087] =           1 =  (POISONED)
-	 data[088] =           1 =  (POISONED)
-	 data[089] =           1 =  (POISONED)
-	 data[090] =           1 =  (POISONED)
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] =          59 = 0000003B
+	 data[060] =          60 = 0000003C
+	 data[061] =          61 = 0000003D
+	 data[062] =          62 = 0000003E
+	 data[063] =          63 = 0000003F
+	 data[064] =          64 = 00000040
+	 data[065] =          65 = 00000041
+	 data[066] =          66 = 00000042
+	 data[067] =          67 = 00000043
+	 data[068] =          68 = 00000044
+	 data[069] =          69 = 00000045
+	 data[070] =          70 = 00000046
+	 data[071] =          71 = 00000047
+	 data[072] =          72 = 00000048
+	 data[073] =          73 = 00000049
+	 data[074] =          74 = 0000004A
+	 data[075] =          75 = 0000004B
+	 data[076] =          76 = 0000004C
+	 data[077] =          77 = 0000004D
+	 data[078] =          78 = 0000004E
+	 data[079] = -1163005939 = BAADF00D (POISONED)
+	 data[080] = -1163005939 = BAADF00D (POISONED)
+	 data[081] = -1163005939 = BAADF00D (POISONED)
+	 data[082] = -1163005939 = BAADF00D (POISONED)
+	 data[083] = -1163005939 = BAADF00D (POISONED)
+	 data[084] = -1163005939 = BAADF00D (POISONED)
+	 data[085] = -1163005939 = BAADF00D (POISONED)
+	 data[086] = -1163005939 = BAADF00D (POISONED)
+	 data[087] = -1163005939 = BAADF00D (POISONED)
+	 data[088] = -1163005939 = BAADF00D (POISONED)
+	 data[089] = -1163005939 = BAADF00D (POISONED)
+	 data[090] = -1163005939 = BAADF00D (POISONED)
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -1710,187 +1694,186 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 69
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         33850814
-StructHashSum:        709646324
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         1706729807
+StructHashSum:        1761342724
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =          59 = ;
-	 data[060] =          60 = <
-	 data[061] =          61 = =
-	 data[062] =          62 = >
-	 data[063] =          63 = ?
-	 data[064] =          64 = @
-	 data[065] =          65 = A
-	 data[066] =          66 = B
-	 data[067] =          67 = C
-	 data[068] =          68 = D
-	 data[069] =           1 =  (POISONED)
-	 data[070] =           1 =  (POISONED)
-	 data[071] =           1 =  (POISONED)
-	 data[072] =           1 =  (POISONED)
-	 data[073] =           1 =  (POISONED)
-	 data[074] =           1 =  (POISONED)
-	 data[075] =           1 =  (POISONED)
-	 data[076] =           1 =  (POISONED)
-	 data[077] =           1 =  (POISONED)
-	 data[078] =           1 =  (POISONED)
-	 data[079] =           1 =  (POISONED)
-	 data[080] =           1 =  (POISONED)
-	 data[081] =           1 =  (POISONED)
-	 data[082] =           1 =  (POISONED)
-	 data[083] =           1 =  (POISONED)
-	 data[084] =           1 =  (POISONED)
-	 data[085] =           1 =  (POISONED)
-	 data[086] =           1 =  (POISONED)
-	 data[087] =           1 =  (POISONED)
-	 data[088] =           1 =  (POISONED)
-	 data[089] =           1 =  (POISONED)
-	 data[090] =           1 =  (POISONED)
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] =          59 = 0000003B
+	 data[060] =          60 = 0000003C
+	 data[061] =          61 = 0000003D
+	 data[062] =          62 = 0000003E
+	 data[063] =          63 = 0000003F
+	 data[064] =          64 = 00000040
+	 data[065] =          65 = 00000041
+	 data[066] =          66 = 00000042
+	 data[067] =          67 = 00000043
+	 data[068] =          68 = 00000044
+	 data[069] = -1163005939 = BAADF00D (POISONED)
+	 data[070] = -1163005939 = BAADF00D (POISONED)
+	 data[071] = -1163005939 = BAADF00D (POISONED)
+	 data[072] = -1163005939 = BAADF00D (POISONED)
+	 data[073] = -1163005939 = BAADF00D (POISONED)
+	 data[074] = -1163005939 = BAADF00D (POISONED)
+	 data[075] = -1163005939 = BAADF00D (POISONED)
+	 data[076] = -1163005939 = BAADF00D (POISONED)
+	 data[077] = -1163005939 = BAADF00D (POISONED)
+	 data[078] = -1163005939 = BAADF00D (POISONED)
+	 data[079] = -1163005939 = BAADF00D (POISONED)
+	 data[080] = -1163005939 = BAADF00D (POISONED)
+	 data[081] = -1163005939 = BAADF00D (POISONED)
+	 data[082] = -1163005939 = BAADF00D (POISONED)
+	 data[083] = -1163005939 = BAADF00D (POISONED)
+	 data[084] = -1163005939 = BAADF00D (POISONED)
+	 data[085] = -1163005939 = BAADF00D (POISONED)
+	 data[086] = -1163005939 = BAADF00D (POISONED)
+	 data[087] = -1163005939 = BAADF00D (POISONED)
+	 data[088] = -1163005939 = BAADF00D (POISONED)
+	 data[089] = -1163005939 = BAADF00D (POISONED)
+	 data[090] = -1163005939 = BAADF00D (POISONED)
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -1900,187 +1883,186 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 59
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         -144806995
-StructHashSum:        -1144092367
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         1854126748
+StructHashSum:        -377299545
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =          49 = 1
-	 data[050] =          50 = 2
-	 data[051] =          51 = 3
-	 data[052] =          52 = 4
-	 data[053] =          53 = 5
-	 data[054] =          54 = 6
-	 data[055] =          55 = 7
-	 data[056] =          56 = 8
-	 data[057] =          57 = 9
-	 data[058] =          58 = :
-	 data[059] =           1 =  (POISONED)
-	 data[060] =           1 =  (POISONED)
-	 data[061] =           1 =  (POISONED)
-	 data[062] =           1 =  (POISONED)
-	 data[063] =           1 =  (POISONED)
-	 data[064] =           1 =  (POISONED)
-	 data[065] =           1 =  (POISONED)
-	 data[066] =           1 =  (POISONED)
-	 data[067] =           1 =  (POISONED)
-	 data[068] =           1 =  (POISONED)
-	 data[069] =           1 =  (POISONED)
-	 data[070] =           1 =  (POISONED)
-	 data[071] =           1 =  (POISONED)
-	 data[072] =           1 =  (POISONED)
-	 data[073] =           1 =  (POISONED)
-	 data[074] =           1 =  (POISONED)
-	 data[075] =           1 =  (POISONED)
-	 data[076] =           1 =  (POISONED)
-	 data[077] =           1 =  (POISONED)
-	 data[078] =           1 =  (POISONED)
-	 data[079] =           1 =  (POISONED)
-	 data[080] =           1 =  (POISONED)
-	 data[081] =           1 =  (POISONED)
-	 data[082] =           1 =  (POISONED)
-	 data[083] =           1 =  (POISONED)
-	 data[084] =           1 =  (POISONED)
-	 data[085] =           1 =  (POISONED)
-	 data[086] =           1 =  (POISONED)
-	 data[087] =           1 =  (POISONED)
-	 data[088] =           1 =  (POISONED)
-	 data[089] =           1 =  (POISONED)
-	 data[090] =           1 =  (POISONED)
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] =          49 = 00000031
+	 data[050] =          50 = 00000032
+	 data[051] =          51 = 00000033
+	 data[052] =          52 = 00000034
+	 data[053] =          53 = 00000035
+	 data[054] =          54 = 00000036
+	 data[055] =          55 = 00000037
+	 data[056] =          56 = 00000038
+	 data[057] =          57 = 00000039
+	 data[058] =          58 = 0000003A
+	 data[059] = -1163005939 = BAADF00D (POISONED)
+	 data[060] = -1163005939 = BAADF00D (POISONED)
+	 data[061] = -1163005939 = BAADF00D (POISONED)
+	 data[062] = -1163005939 = BAADF00D (POISONED)
+	 data[063] = -1163005939 = BAADF00D (POISONED)
+	 data[064] = -1163005939 = BAADF00D (POISONED)
+	 data[065] = -1163005939 = BAADF00D (POISONED)
+	 data[066] = -1163005939 = BAADF00D (POISONED)
+	 data[067] = -1163005939 = BAADF00D (POISONED)
+	 data[068] = -1163005939 = BAADF00D (POISONED)
+	 data[069] = -1163005939 = BAADF00D (POISONED)
+	 data[070] = -1163005939 = BAADF00D (POISONED)
+	 data[071] = -1163005939 = BAADF00D (POISONED)
+	 data[072] = -1163005939 = BAADF00D (POISONED)
+	 data[073] = -1163005939 = BAADF00D (POISONED)
+	 data[074] = -1163005939 = BAADF00D (POISONED)
+	 data[075] = -1163005939 = BAADF00D (POISONED)
+	 data[076] = -1163005939 = BAADF00D (POISONED)
+	 data[077] = -1163005939 = BAADF00D (POISONED)
+	 data[078] = -1163005939 = BAADF00D (POISONED)
+	 data[079] = -1163005939 = BAADF00D (POISONED)
+	 data[080] = -1163005939 = BAADF00D (POISONED)
+	 data[081] = -1163005939 = BAADF00D (POISONED)
+	 data[082] = -1163005939 = BAADF00D (POISONED)
+	 data[083] = -1163005939 = BAADF00D (POISONED)
+	 data[084] = -1163005939 = BAADF00D (POISONED)
+	 data[085] = -1163005939 = BAADF00D (POISONED)
+	 data[086] = -1163005939 = BAADF00D (POISONED)
+	 data[087] = -1163005939 = BAADF00D (POISONED)
+	 data[088] = -1163005939 = BAADF00D (POISONED)
+	 data[089] = -1163005939 = BAADF00D (POISONED)
+	 data[090] = -1163005939 = BAADF00D (POISONED)
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -2090,299 +2072,296 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 49
 Capacity:             160
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E50
-StackHashSum:         -126395520
-StructHashSum:        -1662203675
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D1030
+StackHashSum:         -410547763
+StructHashSum:        -580237802
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[000] =           0 = 00000000
-	 data[001] =           1 =  (POISONED)
-	 data[002] =           2 = 
-	 data[003] =           3 = 
-	 data[004] =           4 = 
-	 data[005] =           5 = 
-	 data[006] =           6 = 
-	 data[007] =           7 = 
-	 data[008] =           8 = 
-	 data[009] =           9 = 	
-	 data[010] =          10 = 
-
-	 data[011] =          11 = 
-	 data[012] =          12 = 
-	 data[013] =          13 = 
-	 data[014] =          14 = 
-	 data[015] =          15 = 
-	 data[016] =          16 = 
-	 data[017] =          17 = 
-	 data[018] =          18 = 
-	 data[019] =          19 = 
-	 data[020] =          20 = 
-	 data[021] =          21 = 
-	 data[022] =          22 = 
-	 data[023] =          23 = 
-	 data[024] =          24 = 
-	 data[025] =          25 = 
-	 data[026] =          26 = 
-	 data[027] =          27 = 
-	 data[028] =          28 = 
-	 data[029] =          29 = 
-	 data[030] =          30 = 
-	 data[031] =          31 = 
-	 data[032] =          32 =  
-	 data[033] =          33 = !
-	 data[034] =          34 = "
-	 data[035] =          35 = #
-	 data[036] =          36 = $
-	 data[037] =          37 = %
-	 data[038] =          38 = &
-	 data[039] =          39 = '
-	 data[040] =          40 = (
-	 data[041] =          41 = )
-	 data[042] =          42 = *
-	 data[043] =          43 = +
-	 data[044] =          44 = ,
-	 data[045] =          45 = -
-	 data[046] =          46 = .
-	 data[047] =          47 = /
-	 data[048] =          48 = 0
-	 data[049] =           1 =  (POISONED)
-	 data[050] =           1 =  (POISONED)
-	 data[051] =           1 =  (POISONED)
-	 data[052] =           1 =  (POISONED)
-	 data[053] =           1 =  (POISONED)
-	 data[054] =           1 =  (POISONED)
-	 data[055] =           1 =  (POISONED)
-	 data[056] =           1 =  (POISONED)
-	 data[057] =           1 =  (POISONED)
-	 data[058] =           1 =  (POISONED)
-	 data[059] =           1 =  (POISONED)
-	 data[060] =           1 =  (POISONED)
-	 data[061] =           1 =  (POISONED)
-	 data[062] =           1 =  (POISONED)
-	 data[063] =           1 =  (POISONED)
-	 data[064] =           1 =  (POISONED)
-	 data[065] =           1 =  (POISONED)
-	 data[066] =           1 =  (POISONED)
-	 data[067] =           1 =  (POISONED)
-	 data[068] =           1 =  (POISONED)
-	 data[069] =           1 =  (POISONED)
-	 data[070] =           1 =  (POISONED)
-	 data[071] =           1 =  (POISONED)
-	 data[072] =           1 =  (POISONED)
-	 data[073] =           1 =  (POISONED)
-	 data[074] =           1 =  (POISONED)
-	 data[075] =           1 =  (POISONED)
-	 data[076] =           1 =  (POISONED)
-	 data[077] =           1 =  (POISONED)
-	 data[078] =           1 =  (POISONED)
-	 data[079] =           1 =  (POISONED)
-	 data[080] =           1 =  (POISONED)
-	 data[081] =           1 =  (POISONED)
-	 data[082] =           1 =  (POISONED)
-	 data[083] =           1 =  (POISONED)
-	 data[084] =           1 =  (POISONED)
-	 data[085] =           1 =  (POISONED)
-	 data[086] =           1 =  (POISONED)
-	 data[087] =           1 =  (POISONED)
-	 data[088] =           1 =  (POISONED)
-	 data[089] =           1 =  (POISONED)
-	 data[090] =           1 =  (POISONED)
-	 data[091] =           1 =  (POISONED)
-	 data[092] =           1 =  (POISONED)
-	 data[093] =           1 =  (POISONED)
-	 data[094] =           1 =  (POISONED)
-	 data[095] =           1 =  (POISONED)
-	 data[096] =           1 =  (POISONED)
-	 data[097] =           1 =  (POISONED)
-	 data[098] =           1 =  (POISONED)
-	 data[099] =           1 =  (POISONED)
-	 data[100] =           1 =  (POISONED)
-	 data[101] =           1 =  (POISONED)
-	 data[102] =           1 =  (POISONED)
-	 data[103] =           1 =  (POISONED)
-	 data[104] =           1 =  (POISONED)
-	 data[105] =           1 =  (POISONED)
-	 data[106] =           1 =  (POISONED)
-	 data[107] =           1 =  (POISONED)
-	 data[108] =           1 =  (POISONED)
-	 data[109] =           1 =  (POISONED)
-	 data[110] =           1 =  (POISONED)
-	 data[111] =           1 =  (POISONED)
-	 data[112] =           1 =  (POISONED)
-	 data[113] =           1 =  (POISONED)
-	 data[114] =           1 =  (POISONED)
-	 data[115] =           1 =  (POISONED)
-	 data[116] =           1 =  (POISONED)
-	 data[117] =           1 =  (POISONED)
-	 data[118] =           1 =  (POISONED)
-	 data[119] =           1 =  (POISONED)
-	 data[120] =           1 =  (POISONED)
-	 data[121] =           1 =  (POISONED)
-	 data[122] =           1 =  (POISONED)
-	 data[123] =           1 =  (POISONED)
-	 data[124] =           1 =  (POISONED)
-	 data[125] =           1 =  (POISONED)
-	 data[126] =           1 =  (POISONED)
-	 data[127] =           1 =  (POISONED)
-	 data[128] =           1 =  (POISONED)
-	 data[129] =           1 =  (POISONED)
-	 data[130] =           1 =  (POISONED)
-	 data[131] =           1 =  (POISONED)
-	 data[132] =           1 =  (POISONED)
-	 data[133] =           1 =  (POISONED)
-	 data[134] =           1 =  (POISONED)
-	 data[135] =           1 =  (POISONED)
-	 data[136] =           1 =  (POISONED)
-	 data[137] =           1 =  (POISONED)
-	 data[138] =           1 =  (POISONED)
-	 data[139] =           1 =  (POISONED)
-	 data[140] =           1 =  (POISONED)
-	 data[141] =           1 =  (POISONED)
-	 data[142] =           1 =  (POISONED)
-	 data[143] =           1 =  (POISONED)
-	 data[144] =           1 =  (POISONED)
-	 data[145] =           1 =  (POISONED)
-	 data[146] =           1 =  (POISONED)
-	 data[147] =           1 =  (POISONED)
-	 data[148] =           1 =  (POISONED)
-	 data[149] =           1 =  (POISONED)
-	 data[150] =           1 =  (POISONED)
-	 data[151] =           1 =  (POISONED)
-	 data[152] =           1 =  (POISONED)
-	 data[153] =           1 =  (POISONED)
-	 data[154] =           1 =  (POISONED)
-	 data[155] =           1 =  (POISONED)
-	 data[156] =           1 =  (POISONED)
-	 data[157] =           1 =  (POISONED)
-	 data[158] =           1 =  (POISONED)
-	 data[159] =           1 =  (POISONED)
+	 data[001] =           1 = 00000001
+	 data[002] =           2 = 00000002
+	 data[003] =           3 = 00000003
+	 data[004] =           4 = 00000004
+	 data[005] =           5 = 00000005
+	 data[006] =           6 = 00000006
+	 data[007] =           7 = 00000007
+	 data[008] =           8 = 00000008
+	 data[009] =           9 = 00000009
+	 data[010] =          10 = 0000000A
+	 data[011] =          11 = 0000000B
+	 data[012] =          12 = 0000000C
+	 data[013] =          13 = 0000000D
+	 data[014] =          14 = 0000000E
+	 data[015] =          15 = 0000000F
+	 data[016] =          16 = 00000010
+	 data[017] =          17 = 00000011
+	 data[018] =          18 = 00000012
+	 data[019] =          19 = 00000013
+	 data[020] =          20 = 00000014
+	 data[021] =          21 = 00000015
+	 data[022] =          22 = 00000016
+	 data[023] =          23 = 00000017
+	 data[024] =          24 = 00000018
+	 data[025] =          25 = 00000019
+	 data[026] =          26 = 0000001A
+	 data[027] =          27 = 0000001B
+	 data[028] =          28 = 0000001C
+	 data[029] =          29 = 0000001D
+	 data[030] =          30 = 0000001E
+	 data[031] =          31 = 0000001F
+	 data[032] =          32 = 00000020
+	 data[033] =          33 = 00000021
+	 data[034] =          34 = 00000022
+	 data[035] =          35 = 00000023
+	 data[036] =          36 = 00000024
+	 data[037] =          37 = 00000025
+	 data[038] =          38 = 00000026
+	 data[039] =          39 = 00000027
+	 data[040] =          40 = 00000028
+	 data[041] =          41 = 00000029
+	 data[042] =          42 = 0000002A
+	 data[043] =          43 = 0000002B
+	 data[044] =          44 = 0000002C
+	 data[045] =          45 = 0000002D
+	 data[046] =          46 = 0000002E
+	 data[047] =          47 = 0000002F
+	 data[048] =          48 = 00000030
+	 data[049] = -1163005939 = BAADF00D (POISONED)
+	 data[050] = -1163005939 = BAADF00D (POISONED)
+	 data[051] = -1163005939 = BAADF00D (POISONED)
+	 data[052] = -1163005939 = BAADF00D (POISONED)
+	 data[053] = -1163005939 = BAADF00D (POISONED)
+	 data[054] = -1163005939 = BAADF00D (POISONED)
+	 data[055] = -1163005939 = BAADF00D (POISONED)
+	 data[056] = -1163005939 = BAADF00D (POISONED)
+	 data[057] = -1163005939 = BAADF00D (POISONED)
+	 data[058] = -1163005939 = BAADF00D (POISONED)
+	 data[059] = -1163005939 = BAADF00D (POISONED)
+	 data[060] = -1163005939 = BAADF00D (POISONED)
+	 data[061] = -1163005939 = BAADF00D (POISONED)
+	 data[062] = -1163005939 = BAADF00D (POISONED)
+	 data[063] = -1163005939 = BAADF00D (POISONED)
+	 data[064] = -1163005939 = BAADF00D (POISONED)
+	 data[065] = -1163005939 = BAADF00D (POISONED)
+	 data[066] = -1163005939 = BAADF00D (POISONED)
+	 data[067] = -1163005939 = BAADF00D (POISONED)
+	 data[068] = -1163005939 = BAADF00D (POISONED)
+	 data[069] = -1163005939 = BAADF00D (POISONED)
+	 data[070] = -1163005939 = BAADF00D (POISONED)
+	 data[071] = -1163005939 = BAADF00D (POISONED)
+	 data[072] = -1163005939 = BAADF00D (POISONED)
+	 data[073] = -1163005939 = BAADF00D (POISONED)
+	 data[074] = -1163005939 = BAADF00D (POISONED)
+	 data[075] = -1163005939 = BAADF00D (POISONED)
+	 data[076] = -1163005939 = BAADF00D (POISONED)
+	 data[077] = -1163005939 = BAADF00D (POISONED)
+	 data[078] = -1163005939 = BAADF00D (POISONED)
+	 data[079] = -1163005939 = BAADF00D (POISONED)
+	 data[080] = -1163005939 = BAADF00D (POISONED)
+	 data[081] = -1163005939 = BAADF00D (POISONED)
+	 data[082] = -1163005939 = BAADF00D (POISONED)
+	 data[083] = -1163005939 = BAADF00D (POISONED)
+	 data[084] = -1163005939 = BAADF00D (POISONED)
+	 data[085] = -1163005939 = BAADF00D (POISONED)
+	 data[086] = -1163005939 = BAADF00D (POISONED)
+	 data[087] = -1163005939 = BAADF00D (POISONED)
+	 data[088] = -1163005939 = BAADF00D (POISONED)
+	 data[089] = -1163005939 = BAADF00D (POISONED)
+	 data[090] = -1163005939 = BAADF00D (POISONED)
+	 data[091] = -1163005939 = BAADF00D (POISONED)
+	 data[092] = -1163005939 = BAADF00D (POISONED)
+	 data[093] = -1163005939 = BAADF00D (POISONED)
+	 data[094] = -1163005939 = BAADF00D (POISONED)
+	 data[095] = -1163005939 = BAADF00D (POISONED)
+	 data[096] = -1163005939 = BAADF00D (POISONED)
+	 data[097] = -1163005939 = BAADF00D (POISONED)
+	 data[098] = -1163005939 = BAADF00D (POISONED)
+	 data[099] = -1163005939 = BAADF00D (POISONED)
+	 data[100] = -1163005939 = BAADF00D (POISONED)
+	 data[101] = -1163005939 = BAADF00D (POISONED)
+	 data[102] = -1163005939 = BAADF00D (POISONED)
+	 data[103] = -1163005939 = BAADF00D (POISONED)
+	 data[104] = -1163005939 = BAADF00D (POISONED)
+	 data[105] = -1163005939 = BAADF00D (POISONED)
+	 data[106] = -1163005939 = BAADF00D (POISONED)
+	 data[107] = -1163005939 = BAADF00D (POISONED)
+	 data[108] = -1163005939 = BAADF00D (POISONED)
+	 data[109] = -1163005939 = BAADF00D (POISONED)
+	 data[110] = -1163005939 = BAADF00D (POISONED)
+	 data[111] = -1163005939 = BAADF00D (POISONED)
+	 data[112] = -1163005939 = BAADF00D (POISONED)
+	 data[113] = -1163005939 = BAADF00D (POISONED)
+	 data[114] = -1163005939 = BAADF00D (POISONED)
+	 data[115] = -1163005939 = BAADF00D (POISONED)
+	 data[116] = -1163005939 = BAADF00D (POISONED)
+	 data[117] = -1163005939 = BAADF00D (POISONED)
+	 data[118] = -1163005939 = BAADF00D (POISONED)
+	 data[119] = -1163005939 = BAADF00D (POISONED)
+	 data[120] = -1163005939 = BAADF00D (POISONED)
+	 data[121] = -1163005939 = BAADF00D (POISONED)
+	 data[122] = -1163005939 = BAADF00D (POISONED)
+	 data[123] = -1163005939 = BAADF00D (POISONED)
+	 data[124] = -1163005939 = BAADF00D (POISONED)
+	 data[125] = -1163005939 = BAADF00D (POISONED)
+	 data[126] = -1163005939 = BAADF00D (POISONED)
+	 data[127] = -1163005939 = BAADF00D (POISONED)
+	 data[128] = -1163005939 = BAADF00D (POISONED)
+	 data[129] = -1163005939 = BAADF00D (POISONED)
+	 data[130] = -1163005939 = BAADF00D (POISONED)
+	 data[131] = -1163005939 = BAADF00D (POISONED)
+	 data[132] = -1163005939 = BAADF00D (POISONED)
+	 data[133] = -1163005939 = BAADF00D (POISONED)
+	 data[134] = -1163005939 = BAADF00D (POISONED)
+	 data[135] = -1163005939 = BAADF00D (POISONED)
+	 data[136] = -1163005939 = BAADF00D (POISONED)
+	 data[137] = -1163005939 = BAADF00D (POISONED)
+	 data[138] = -1163005939 = BAADF00D (POISONED)
+	 data[139] = -1163005939 = BAADF00D (POISONED)
+	 data[140] = -1163005939 = BAADF00D (POISONED)
+	 data[141] = -1163005939 = BAADF00D (POISONED)
+	 data[142] = -1163005939 = BAADF00D (POISONED)
+	 data[143] = -1163005939 = BAADF00D (POISONED)
+	 data[144] = -1163005939 = BAADF00D (POISONED)
+	 data[145] = -1163005939 = BAADF00D (POISONED)
+	 data[146] = -1163005939 = BAADF00D (POISONED)
+	 data[147] = -1163005939 = BAADF00D (POISONED)
+	 data[148] = -1163005939 = BAADF00D (POISONED)
+	 data[149] = -1163005939 = BAADF00D (POISONED)
+	 data[150] = -1163005939 = BAADF00D (POISONED)
+	 data[151] = -1163005939 = BAADF00D (POISONED)
+	 data[152] = -1163005939 = BAADF00D (POISONED)
+	 data[153] = -1163005939 = BAADF00D (POISONED)
+	 data[154] = -1163005939 = BAADF00D (POISONED)
+	 data[155] = -1163005939 = BAADF00D (POISONED)
+	 data[156] = -1163005939 = BAADF00D (POISONED)
+	 data[157] = -1163005939 = BAADF00D (POISONED)
+	 data[158] = -1163005939 = BAADF00D (POISONED)
+	 data[159] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
 Resize to 80
-new capacity: 80
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 39
 Capacity:             80
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E00
-StackHashSum:         -1483199513
-StructHashSum:        -717269375
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0EF0
+StackHashSum:         2090391458
+StructHashSum:        1714504869
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =          29 = 
-	 data[30] =          30 = 
-	 data[31] =          31 = 
-	 data[32] =          32 =  
-	 data[33] =          33 = !
-	 data[34] =          34 = "
-	 data[35] =          35 = #
-	 data[36] =          36 = $
-	 data[37] =          37 = %
-	 data[38] =          38 = &
-	 data[39] =           1 =  (POISONED)
-	 data[40] =           1 =  (POISONED)
-	 data[41] =           1 =  (POISONED)
-	 data[42] =           1 =  (POISONED)
-	 data[43] =           1 =  (POISONED)
-	 data[44] =           1 =  (POISONED)
-	 data[45] =           1 =  (POISONED)
-	 data[46] =           1 =  (POISONED)
-	 data[47] =           1 =  (POISONED)
-	 data[48] =           1 =  (POISONED)
-	 data[49] =           1 =  (POISONED)
-	 data[50] =           1 =  (POISONED)
-	 data[51] =           1 =  (POISONED)
-	 data[52] =           1 =  (POISONED)
-	 data[53] =           1 =  (POISONED)
-	 data[54] =           1 =  (POISONED)
-	 data[55] =           1 =  (POISONED)
-	 data[56] =           1 =  (POISONED)
-	 data[57] =           1 =  (POISONED)
-	 data[58] =           1 =  (POISONED)
-	 data[59] =           1 =  (POISONED)
-	 data[60] =           1 =  (POISONED)
-	 data[61] =           1 =  (POISONED)
-	 data[62] =           1 =  (POISONED)
-	 data[63] =           1 =  (POISONED)
-	 data[64] =           1 =  (POISONED)
-	 data[65] =           1 =  (POISONED)
-	 data[66] =           1 =  (POISONED)
-	 data[67] =           1 =  (POISONED)
-	 data[68] =           1 =  (POISONED)
-	 data[69] =           1 =  (POISONED)
-	 data[70] =           1 =  (POISONED)
-	 data[71] =           1 =  (POISONED)
-	 data[72] =           1 =  (POISONED)
-	 data[73] =           1 =  (POISONED)
-	 data[74] =           1 =  (POISONED)
-	 data[75] =           1 =  (POISONED)
-	 data[76] =           1 =  (POISONED)
-	 data[77] =           1 =  (POISONED)
-	 data[78] =           1 =  (POISONED)
-	 data[79] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] =          29 = 0000001D
+	 data[30] =          30 = 0000001E
+	 data[31] =          31 = 0000001F
+	 data[32] =          32 = 00000020
+	 data[33] =          33 = 00000021
+	 data[34] =          34 = 00000022
+	 data[35] =          35 = 00000023
+	 data[36] =          36 = 00000024
+	 data[37] =          37 = 00000025
+	 data[38] =          38 = 00000026
+	 data[39] = -1163005939 = BAADF00D (POISONED)
+	 data[40] = -1163005939 = BAADF00D (POISONED)
+	 data[41] = -1163005939 = BAADF00D (POISONED)
+	 data[42] = -1163005939 = BAADF00D (POISONED)
+	 data[43] = -1163005939 = BAADF00D (POISONED)
+	 data[44] = -1163005939 = BAADF00D (POISONED)
+	 data[45] = -1163005939 = BAADF00D (POISONED)
+	 data[46] = -1163005939 = BAADF00D (POISONED)
+	 data[47] = -1163005939 = BAADF00D (POISONED)
+	 data[48] = -1163005939 = BAADF00D (POISONED)
+	 data[49] = -1163005939 = BAADF00D (POISONED)
+	 data[50] = -1163005939 = BAADF00D (POISONED)
+	 data[51] = -1163005939 = BAADF00D (POISONED)
+	 data[52] = -1163005939 = BAADF00D (POISONED)
+	 data[53] = -1163005939 = BAADF00D (POISONED)
+	 data[54] = -1163005939 = BAADF00D (POISONED)
+	 data[55] = -1163005939 = BAADF00D (POISONED)
+	 data[56] = -1163005939 = BAADF00D (POISONED)
+	 data[57] = -1163005939 = BAADF00D (POISONED)
+	 data[58] = -1163005939 = BAADF00D (POISONED)
+	 data[59] = -1163005939 = BAADF00D (POISONED)
+	 data[60] = -1163005939 = BAADF00D (POISONED)
+	 data[61] = -1163005939 = BAADF00D (POISONED)
+	 data[62] = -1163005939 = BAADF00D (POISONED)
+	 data[63] = -1163005939 = BAADF00D (POISONED)
+	 data[64] = -1163005939 = BAADF00D (POISONED)
+	 data[65] = -1163005939 = BAADF00D (POISONED)
+	 data[66] = -1163005939 = BAADF00D (POISONED)
+	 data[67] = -1163005939 = BAADF00D (POISONED)
+	 data[68] = -1163005939 = BAADF00D (POISONED)
+	 data[69] = -1163005939 = BAADF00D (POISONED)
+	 data[70] = -1163005939 = BAADF00D (POISONED)
+	 data[71] = -1163005939 = BAADF00D (POISONED)
+	 data[72] = -1163005939 = BAADF00D (POISONED)
+	 data[73] = -1163005939 = BAADF00D (POISONED)
+	 data[74] = -1163005939 = BAADF00D (POISONED)
+	 data[75] = -1163005939 = BAADF00D (POISONED)
+	 data[76] = -1163005939 = BAADF00D (POISONED)
+	 data[77] = -1163005939 = BAADF00D (POISONED)
+	 data[78] = -1163005939 = BAADF00D (POISONED)
+	 data[79] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -2392,272 +2371,267 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 29
 Capacity:             80
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0E00
-StackHashSum:         805601154
-StructHashSum:        -1859798941
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0EF0
+StackHashSum:         -929570149
+StructHashSum:        -1731090459
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =          19 = 
-	 data[20] =          20 = 
-	 data[21] =          21 = 
-	 data[22] =          22 = 
-	 data[23] =          23 = 
-	 data[24] =          24 = 
-	 data[25] =          25 = 
-	 data[26] =          26 = 
-	 data[27] =          27 = 
-	 data[28] =          28 = 
-	 data[29] =           1 =  (POISONED)
-	 data[30] =           1 =  (POISONED)
-	 data[31] =           1 =  (POISONED)
-	 data[32] =           1 =  (POISONED)
-	 data[33] =           1 =  (POISONED)
-	 data[34] =           1 =  (POISONED)
-	 data[35] =           1 =  (POISONED)
-	 data[36] =           1 =  (POISONED)
-	 data[37] =           1 =  (POISONED)
-	 data[38] =           1 =  (POISONED)
-	 data[39] =           1 =  (POISONED)
-	 data[40] =           1 =  (POISONED)
-	 data[41] =           1 =  (POISONED)
-	 data[42] =           1 =  (POISONED)
-	 data[43] =           1 =  (POISONED)
-	 data[44] =           1 =  (POISONED)
-	 data[45] =           1 =  (POISONED)
-	 data[46] =           1 =  (POISONED)
-	 data[47] =           1 =  (POISONED)
-	 data[48] =           1 =  (POISONED)
-	 data[49] =           1 =  (POISONED)
-	 data[50] =           1 =  (POISONED)
-	 data[51] =           1 =  (POISONED)
-	 data[52] =           1 =  (POISONED)
-	 data[53] =           1 =  (POISONED)
-	 data[54] =           1 =  (POISONED)
-	 data[55] =           1 =  (POISONED)
-	 data[56] =           1 =  (POISONED)
-	 data[57] =           1 =  (POISONED)
-	 data[58] =           1 =  (POISONED)
-	 data[59] =           1 =  (POISONED)
-	 data[60] =           1 =  (POISONED)
-	 data[61] =           1 =  (POISONED)
-	 data[62] =           1 =  (POISONED)
-	 data[63] =           1 =  (POISONED)
-	 data[64] =           1 =  (POISONED)
-	 data[65] =           1 =  (POISONED)
-	 data[66] =           1 =  (POISONED)
-	 data[67] =           1 =  (POISONED)
-	 data[68] =           1 =  (POISONED)
-	 data[69] =           1 =  (POISONED)
-	 data[70] =           1 =  (POISONED)
-	 data[71] =           1 =  (POISONED)
-	 data[72] =           1 =  (POISONED)
-	 data[73] =           1 =  (POISONED)
-	 data[74] =           1 =  (POISONED)
-	 data[75] =           1 =  (POISONED)
-	 data[76] =           1 =  (POISONED)
-	 data[77] =           1 =  (POISONED)
-	 data[78] =           1 =  (POISONED)
-	 data[79] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] =          19 = 00000013
+	 data[20] =          20 = 00000014
+	 data[21] =          21 = 00000015
+	 data[22] =          22 = 00000016
+	 data[23] =          23 = 00000017
+	 data[24] =          24 = 00000018
+	 data[25] =          25 = 00000019
+	 data[26] =          26 = 0000001A
+	 data[27] =          27 = 0000001B
+	 data[28] =          28 = 0000001C
+	 data[29] = -1163005939 = BAADF00D (POISONED)
+	 data[30] = -1163005939 = BAADF00D (POISONED)
+	 data[31] = -1163005939 = BAADF00D (POISONED)
+	 data[32] = -1163005939 = BAADF00D (POISONED)
+	 data[33] = -1163005939 = BAADF00D (POISONED)
+	 data[34] = -1163005939 = BAADF00D (POISONED)
+	 data[35] = -1163005939 = BAADF00D (POISONED)
+	 data[36] = -1163005939 = BAADF00D (POISONED)
+	 data[37] = -1163005939 = BAADF00D (POISONED)
+	 data[38] = -1163005939 = BAADF00D (POISONED)
+	 data[39] = -1163005939 = BAADF00D (POISONED)
+	 data[40] = -1163005939 = BAADF00D (POISONED)
+	 data[41] = -1163005939 = BAADF00D (POISONED)
+	 data[42] = -1163005939 = BAADF00D (POISONED)
+	 data[43] = -1163005939 = BAADF00D (POISONED)
+	 data[44] = -1163005939 = BAADF00D (POISONED)
+	 data[45] = -1163005939 = BAADF00D (POISONED)
+	 data[46] = -1163005939 = BAADF00D (POISONED)
+	 data[47] = -1163005939 = BAADF00D (POISONED)
+	 data[48] = -1163005939 = BAADF00D (POISONED)
+	 data[49] = -1163005939 = BAADF00D (POISONED)
+	 data[50] = -1163005939 = BAADF00D (POISONED)
+	 data[51] = -1163005939 = BAADF00D (POISONED)
+	 data[52] = -1163005939 = BAADF00D (POISONED)
+	 data[53] = -1163005939 = BAADF00D (POISONED)
+	 data[54] = -1163005939 = BAADF00D (POISONED)
+	 data[55] = -1163005939 = BAADF00D (POISONED)
+	 data[56] = -1163005939 = BAADF00D (POISONED)
+	 data[57] = -1163005939 = BAADF00D (POISONED)
+	 data[58] = -1163005939 = BAADF00D (POISONED)
+	 data[59] = -1163005939 = BAADF00D (POISONED)
+	 data[60] = -1163005939 = BAADF00D (POISONED)
+	 data[61] = -1163005939 = BAADF00D (POISONED)
+	 data[62] = -1163005939 = BAADF00D (POISONED)
+	 data[63] = -1163005939 = BAADF00D (POISONED)
+	 data[64] = -1163005939 = BAADF00D (POISONED)
+	 data[65] = -1163005939 = BAADF00D (POISONED)
+	 data[66] = -1163005939 = BAADF00D (POISONED)
+	 data[67] = -1163005939 = BAADF00D (POISONED)
+	 data[68] = -1163005939 = BAADF00D (POISONED)
+	 data[69] = -1163005939 = BAADF00D (POISONED)
+	 data[70] = -1163005939 = BAADF00D (POISONED)
+	 data[71] = -1163005939 = BAADF00D (POISONED)
+	 data[72] = -1163005939 = BAADF00D (POISONED)
+	 data[73] = -1163005939 = BAADF00D (POISONED)
+	 data[74] = -1163005939 = BAADF00D (POISONED)
+	 data[75] = -1163005939 = BAADF00D (POISONED)
+	 data[76] = -1163005939 = BAADF00D (POISONED)
+	 data[77] = -1163005939 = BAADF00D (POISONED)
+	 data[78] = -1163005939 = BAADF00D (POISONED)
+	 data[79] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
 Resize to 40
-new capacity: 40
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 19
 Capacity:             40
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DD8
-StackHashSum:         518009689
-StructHashSum:        -152780142
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0E50
+StackHashSum:         -642681896
+StructHashSum:        1576003246
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           9 = 	
-	 data[10] =          10 = 
-
-	 data[11] =          11 = 
-	 data[12] =          12 = 
-	 data[13] =          13 = 
-	 data[14] =          14 = 
-	 data[15] =          15 = 
-	 data[16] =          16 = 
-	 data[17] =          17 = 
-	 data[18] =          18 = 
-	 data[19] =           1 =  (POISONED)
-	 data[20] =           1 =  (POISONED)
-	 data[21] =           1 =  (POISONED)
-	 data[22] =           1 =  (POISONED)
-	 data[23] =           1 =  (POISONED)
-	 data[24] =           1 =  (POISONED)
-	 data[25] =           1 =  (POISONED)
-	 data[26] =           1 =  (POISONED)
-	 data[27] =           1 =  (POISONED)
-	 data[28] =           1 =  (POISONED)
-	 data[29] =           1 =  (POISONED)
-	 data[30] =           1 =  (POISONED)
-	 data[31] =           1 =  (POISONED)
-	 data[32] =           1 =  (POISONED)
-	 data[33] =           1 =  (POISONED)
-	 data[34] =           1 =  (POISONED)
-	 data[35] =           1 =  (POISONED)
-	 data[36] =           1 =  (POISONED)
-	 data[37] =           1 =  (POISONED)
-	 data[38] =           1 =  (POISONED)
-	 data[39] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] =           9 = 00000009
+	 data[10] =          10 = 0000000A
+	 data[11] =          11 = 0000000B
+	 data[12] =          12 = 0000000C
+	 data[13] =          13 = 0000000D
+	 data[14] =          14 = 0000000E
+	 data[15] =          15 = 0000000F
+	 data[16] =          16 = 00000010
+	 data[17] =          17 = 00000011
+	 data[18] =          18 = 00000012
+	 data[19] = -1163005939 = BAADF00D (POISONED)
+	 data[20] = -1163005939 = BAADF00D (POISONED)
+	 data[21] = -1163005939 = BAADF00D (POISONED)
+	 data[22] = -1163005939 = BAADF00D (POISONED)
+	 data[23] = -1163005939 = BAADF00D (POISONED)
+	 data[24] = -1163005939 = BAADF00D (POISONED)
+	 data[25] = -1163005939 = BAADF00D (POISONED)
+	 data[26] = -1163005939 = BAADF00D (POISONED)
+	 data[27] = -1163005939 = BAADF00D (POISONED)
+	 data[28] = -1163005939 = BAADF00D (POISONED)
+	 data[29] = -1163005939 = BAADF00D (POISONED)
+	 data[30] = -1163005939 = BAADF00D (POISONED)
+	 data[31] = -1163005939 = BAADF00D (POISONED)
+	 data[32] = -1163005939 = BAADF00D (POISONED)
+	 data[33] = -1163005939 = BAADF00D (POISONED)
+	 data[34] = -1163005939 = BAADF00D (POISONED)
+	 data[35] = -1163005939 = BAADF00D (POISONED)
+	 data[36] = -1163005939 = BAADF00D (POISONED)
+	 data[37] = -1163005939 = BAADF00D (POISONED)
+	 data[38] = -1163005939 = BAADF00D (POISONED)
+	 data[39] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
 Resize to 20
-new capacity: 20
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 87):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 89):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 9
 Capacity:             20
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DC4
-StackHashSum:         1458003304
-StructHashSum:        -1065710142
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0E00
+StackHashSum:         698585289
+StructHashSum:        -792313676
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
 	 data[00] =           0 = 00000000
-	 data[01] =           1 =  (POISONED)
-	 data[02] =           2 = 
-	 data[03] =           3 = 
-	 data[04] =           4 = 
-	 data[05] =           5 = 
-	 data[06] =           6 = 
-	 data[07] =           7 = 
-	 data[08] =           8 = 
-	 data[09] =           1 =  (POISONED)
-	 data[10] =           1 =  (POISONED)
-	 data[11] =           1 =  (POISONED)
-	 data[12] =           1 =  (POISONED)
-	 data[13] =           1 =  (POISONED)
-	 data[14] =           1 =  (POISONED)
-	 data[15] =           1 =  (POISONED)
-	 data[16] =           1 =  (POISONED)
-	 data[17] =           1 =  (POISONED)
-	 data[18] =           1 =  (POISONED)
-	 data[19] =           1 =  (POISONED)
+	 data[01] =           1 = 00000001
+	 data[02] =           2 = 00000002
+	 data[03] =           3 = 00000003
+	 data[04] =           4 = 00000004
+	 data[05] =           5 = 00000005
+	 data[06] =           6 = 00000006
+	 data[07] =           7 = 00000007
+	 data[08] =           8 = 00000008
+	 data[09] = -1163005939 = BAADF00D (POISONED)
+	 data[10] = -1163005939 = BAADF00D (POISONED)
+	 data[11] = -1163005939 = BAADF00D (POISONED)
+	 data[12] = -1163005939 = BAADF00D (POISONED)
+	 data[13] = -1163005939 = BAADF00D (POISONED)
+	 data[14] = -1163005939 = BAADF00D (POISONED)
+	 data[15] = -1163005939 = BAADF00D (POISONED)
+	 data[16] = -1163005939 = BAADF00D (POISONED)
+	 data[17] = -1163005939 = BAADF00D (POISONED)
+	 data[18] = -1163005939 = BAADF00D (POISONED)
+	 data[19] = -1163005939 = BAADF00D (POISONED)
 }
 
 
 ---------- Finish Dump ----------
 
 Resize to 10
-new capacity: 10
 Trying to Pop from an empty stack (size = 0)
 
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 93):
-Stack [0x001F0DB0] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 370):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 95):
+Stack [0x001D0DB0] 
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 385):
 ------
 | OK |
 ------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
-Pointer:              001F0DB0
+Pointer:              001D0DB0
 Size:                 0
 Capacity:             10
 DeadInside:           0
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DBA
-StackHashSum:         -13756029
-StructHashSum:        1339007163
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0DD8
+StackHashSum:         -1404895423
+StructHashSum:        -1264250294
 
 StackLeftCannary:      dedfed15
 StackRightCannary:     ca115fa1
 {
-	 data[0] =           1 =  (POISONED)
-	 data[1] =           1 =  (POISONED)
-	 data[2] =           1 =  (POISONED)
-	 data[3] =           1 =  (POISONED)
-	 data[4] =           1 =  (POISONED)
-	 data[5] =           1 =  (POISONED)
-	 data[6] =           1 =  (POISONED)
-	 data[7] =           1 =  (POISONED)
-	 data[8] =           1 =  (POISONED)
-	 data[9] =           1 =  (POISONED)
+	 data[0] = -1163005939 = BAADF00D (POISONED)
+	 data[1] = -1163005939 = BAADF00D (POISONED)
+	 data[2] = -1163005939 = BAADF00D (POISONED)
+	 data[3] = -1163005939 = BAADF00D (POISONED)
+	 data[4] = -1163005939 = BAADF00D (POISONED)
+	 data[5] = -1163005939 = BAADF00D (POISONED)
+	 data[6] = -1163005939 = BAADF00D (POISONED)
+	 data[7] = -1163005939 = BAADF00D (POISONED)
+	 data[8] = -1163005939 = BAADF00D (POISONED)
+	 data[9] = -1163005939 = BAADF00D (POISONED)
 }
 
 
@@ -2667,22 +2641,22 @@ StackRightCannary:     ca115fa1
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 97):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 99):
 Stack [0xBAADF00D] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 374):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 389):
 ---------
 | ERROR |
 ---------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 390):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 405):
 ------------------------------------------------
 | CANNARY ERROR: Left Stack Cannary is invalid |
 ------------------------------------------------
 INVALID StackLeftCannary:     baadf00d
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 402):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 417):
 -------------------------------------------------
 | CANNARY ERROR: Right Stack Cannary is invalid |
 -------------------------------------------------
@@ -2691,13 +2665,13 @@ Pointer:              BAADF00D
 Size:                 -1163005939
 Capacity:             -1163005939
 DeadInside:           1
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DBA
-StackHashSum:         -13756029
-StructHashSum:        1339007163
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0DD8
+StackHashSum:         -1404895423
+StructHashSum:        -1264250294
 
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 433):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 448):
 -------------------------------------------------------
 | CAPACITY ERROR: Stack Capacity has a Negative Value |
 -------------------------------------------------------
@@ -2705,42 +2679,42 @@ In int FuckingDump(stack_t*, const char*, const char*, int) (line 433):
 ---------- EMERGENCY FINISH DUMP ----------
 
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 -----------------------------------------
 | DEADINSIDE ERROR: Stack doesn't exist |
 -----------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 ------------------------------------------------------------
 | POINTER ERROR: Invalid Stack Pointer (pointer to buffer) |
 ------------------------------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 --------------------------------------
 | SIZE ERROR: Stack Size is poisoned |
 --------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 ----------------------------------------------
 | CAPACITY ERROR: Stack Capacity is poisoned |
 ----------------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 ------------------------------------------------
 | CANNARY ERROR: Left Stack Cannary is invalid |
 ------------------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 -------------------------------------------------
 | CANNARY ERROR: Right Stack Cannary is invalid |
 -------------------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 ----------------------------------------------------
 | CANNARY ERROR: Left Structure Cannary is invalid |
 ----------------------------------------------------
 
-In int DecodeErrors(UnsignedLL) (line 221):
+In int DecodeErrors(UnsignedLL) (line 235):
 -----------------------------------------------------
 | CANNARY ERROR: Right Structure Cannary is invalid |
 -----------------------------------------------------
@@ -2749,22 +2723,22 @@ Trying to Push to an invalid stack
 
 ++++++++++ Start Dump ++++++++++
 
-int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 101):
+int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 103):
 Stack [0xBAADF00D] 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 374):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 389):
 ---------
 | ERROR |
 ---------
-Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 59): 
+Originally 'stk1' from int main() at D:\Programming\C\Ded_course_1_sem\Stack\Stack_main.cpp (line 61): 
 
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 390):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 405):
 ------------------------------------------------
 | CANNARY ERROR: Left Stack Cannary is invalid |
 ------------------------------------------------
 INVALID StackLeftCannary:     baadf00d
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 402):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 417):
 -------------------------------------------------
 | CANNARY ERROR: Right Stack Cannary is invalid |
 -------------------------------------------------
@@ -2773,13 +2747,13 @@ Pointer:              BAADF00D
 Size:                 -1163005939
 Capacity:             -1163005939
 DeadInside:           1
-PtrStackLeftCannary:  001F0DA8
-PtrStackRightCannary: 001F0DBA
-StackHashSum:         -13756029
-StructHashSum:        1339007163
+PtrStackLeftCannary:  001D0DA8
+PtrStackRightCannary: 001D0DD8
+StackHashSum:         -1404895423
+StructHashSum:        -1264250294
 
 
-In int FuckingDump(stack_t*, const char*, const char*, int) (line 433):
+In int FuckingDump(stack_t*, const char*, const char*, int) (line 448):
 -------------------------------------------------------
 | CAPACITY ERROR: Stack Capacity has a Negative Value |
 -------------------------------------------------------

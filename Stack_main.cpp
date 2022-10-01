@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-//#include <TXLib.h>
 
 #include "logging.h"
 #include "stack.h"
@@ -9,9 +8,6 @@
 #include "GetPoison.h"
 #include "specificators.h"
 
-#define HASH 1
-#define CANARY 1
-#define VERIFIER 0
 
 const int INT_CONST = 300;
 
@@ -22,6 +18,12 @@ const bird_t LEFT_CANNARY  = 0xDEDFED15;
 const bird_t RIGHT_CANNARY = 0xCA115FA1;
 
 const UnsignedLL START_HASH = 88005553535;
+
+#ifndef STACK_MODE
+
+    #define STACK_MODE USER_MODE
+
+#endif
 
 enum ERRCODES
 {
@@ -99,6 +101,8 @@ int main()
     StackPush(&stk1, 8);
 
     StackDump(&stk1);
+
+    StackCtor(&stk1);
 }
 
 stack_t StructureStackInit(const char* name,
@@ -109,22 +113,30 @@ stack_t StructureStackInit(const char* name,
     elem_t*            Ptr             = NULL;
     size_t             Size            = 0;
     size_t             Capacity        = 0;
+
     UnsignedLL*        PtrStackCannary = NULL;
 
-    stack_t temp_stk = {LEFT_CANNARY,
-                        getPoison(Ptr),
-                        getPoison(Size),
-                        getPoison(Capacity),
-                        1,
-                        getPoison(PtrStackCannary),
-                        getPoison(PtrStackCannary),
-                        0,
-                        0};
+    stack_t temp_stk = {
+        .StructLeftCannary       = LEFT_CANNARY,
+        .Ptr                  = getPoison(Ptr),
+        .Size                 = getPoison(Size),
+        .Capacity             = getPoison(Capacity),
+        .DeadInside           = 1,
+        .PtrStackLeftBird  = getPoison(PtrStackCannary),
+        .PtrStackRightBird = getPoison(PtrStackCannary),
 
+    #if STACK_MODE >= HASH_MODE
+        .StackHashSum         = 0,
+        .StructHashSum        = 0,
+    #endif
+    };
+
+#if STACK_MODE >= HARDDEBUG_MODE
     temp_stk.debug_info.Orig_name    = name;
     temp_stk.debug_info.Func_calling = func;
     temp_stk.debug_info.File_calling = file;
     temp_stk.debug_info.Line_created = line;
+#endif
 
     temp_stk.StructRightCannary  = RIGHT_CANNARY;
 
@@ -161,6 +173,7 @@ UnsignedLL FindErrors(stack_t* stk)
 
     if (stk->Size > stk->Capacity)                      sum_errcodes += 1 << STACKOVERFLOW;
 
+#if STACK_MODE >= HASH_MODE
     if (!(sum_errcodes & (1 << NEGCAP)) && !(sum_errcodes & (1 << CAPPOISONED)))
     {
         UnsignedLL stack_hash_sum = CalculateGNUHash(stk->PtrStackLeftBird,
@@ -195,6 +208,7 @@ UnsignedLL FindErrors(stack_t* stk)
     {
         stk->StructHashSum = prev_struct_hash_sum;
     }
+#endif
 
     if (sum_errcodes == 0)
     {
@@ -329,6 +343,7 @@ UnsignedLL StackVerify(stack_t* stk)
     return sum_errcodes;
 }
 
+#if STACK_MODE >= HARDDEBUG_MODE
 void DumpEmExit()
 {
     log("\n---------- EMERGENCY FINISH DUMP ----------\n\n");
@@ -489,7 +504,9 @@ int FuckingDump(stack_t* stk,
 
     return 0;
 };
+#endif
 
+#if STACK_MODE >= HASH_MODE
 UnsignedLL CalculateGNUHash(void* start_ptr, size_t num_bytes)
 {
     if (start_ptr == NULL || start_ptr == getPoison(start_ptr))
@@ -524,6 +541,8 @@ static int UpdateHash(stack_t* stk)
 
     return 0;
 }
+#endif
+
 
 static int StackResize(stack_t* stk, size_t new_capacity)
 {
@@ -533,8 +552,6 @@ static int StackResize(stack_t* stk, size_t new_capacity)
 
         return getPoison(INT_CONST);
     }
-
-    log("new capacity: %d\n", new_capacity);
 
     char* temp_ptr = (char*) realloc((char*)stk->PtrStackLeftBird, new_capacity * sizeof(elem_t) + 2 * sizeof(bird_t));
 
@@ -565,7 +582,9 @@ static int StackResize(stack_t* stk, size_t new_capacity)
 
     stk->Capacity = new_capacity;
 
+#if STACK_MODE >= HASH_MODE
     UpdateHash(stk);
+#endif
 
     StackVerify(stk);
 
@@ -613,7 +632,9 @@ int StackCtor(stack_t* stk)
     stk->StructLeftCannary  = LEFT_CANNARY;
     stk->StructRightCannary = RIGHT_CANNARY;
 
+#if STACK_MODE >= HASH_MODE
     UpdateHash(stk);
+#endif
 
     StackVerify(stk);
 
@@ -646,13 +667,18 @@ int StackDtor(stack_t* stk)
     stk->Ptr           = getPoison(stk->Ptr);
     stk->Size          = getPoison(stk->Size);
     stk->DeadInside    = 1;
+
+#if STACK_MODE >= HASH_MODE
     stk->StackHashSum  = CalculateGNUHash(stk->PtrStackLeftBird,
                                           stk->Capacity * sizeof(elem_t) + 2 * sizeof(bird_t));
+#endif
 
     stk->Capacity      = getPoison(stk->Capacity);
 
+#if STACK_MODE >= HASH_MODE
     stk->StructHashSum = 0;
     stk->StructHashSum = CalculateGNUHash(stk, sizeof(stk));
+#endif
 
     *stk->PtrStackLeftBird  = getPoison(*stk->PtrStackLeftBird);
 
@@ -683,7 +709,9 @@ int StackPush(stack_t* stk, elem_t elem)
 
     stk->Size++;
 
+#if STACK_MODE >= HASH_MODE
     UpdateHash(stk);
+#endif
 
     StackVerify(stk);
 
@@ -712,7 +740,9 @@ elem_t StackPop(stack_t* stk)
 
     stk->Size--;
 
+#if STACK_MODE >= HASH_MODE
     UpdateHash(stk);
+#endif
 
     if (stk->Capacity >= 2 * MIN_LEN_STACK && stk->Size <= stk->Capacity / 4)
     {
@@ -721,7 +751,9 @@ elem_t StackPop(stack_t* stk)
         StackResize(stk, stk->Capacity / 2);
     }
 
+#if STACK_MODE >= HASH_MODE
     UpdateHash(stk);
+#endif
 
     StackVerify(stk);
 

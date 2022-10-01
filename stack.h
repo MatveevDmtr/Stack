@@ -3,21 +3,21 @@
 
 #include "StackConfig.h"
 
-// two headers: interface internal
-
 #define StructStackInit(name)                              \
         StructureStackInit(#name,                          \
                            __PRETTY_FUNCTION__,            \
                            __FILE__,                       \
                            __LINE__);
 
-
-#define StackDump(stk);                                    \
-        FuckingDump(stk,                                   \
-                    __PRETTY_FUNCTION__,                   \
-                    __FILE__,                              \
-                    __LINE__);
-
+#if STACK_MODE >= HARDDEBUG_MODE
+    #define StackDump(stk);                                    \
+            FuckingDump(stk,                                   \
+                        __PRETTY_FUNCTION__,                   \
+                        __FILE__,                              \
+                        __LINE__);
+#else if
+    #define StackDump(stk);
+#endif
 
 typedef unsigned long long UnsignedLL;
 
@@ -32,9 +32,13 @@ typedef struct stack_info
     bool               DeadInside;
     bird_t*            PtrStackLeftBird;
     bird_t*            PtrStackRightBird;
+
+#if STACK_MODE >= HASH_MODE
     UnsignedLL         StackHashSum;
     UnsignedLL         StructHashSum;
+#endif
 
+#if STACK_MODE >= HARDDEBUG_MODE
     struct  calling_inf
     {
         const char* Orig_name;
@@ -42,6 +46,7 @@ typedef struct stack_info
         const char* File_calling;
         size_t      Line_created;
     } debug_info;
+#endif
 
     bird_t StructRightCannary;
 }
@@ -60,12 +65,14 @@ int LogCritError(int errcode, const char* func, int line);
 
 UnsignedLL StackVerify(stack_t* stk);
 
+#if STACK_MODE >= HARDDEBUG_MODE
 void DumpEmExit();
 
 int FuckingDump(stack_t* stk,
                 const char* funcname,
                 const char* filename,
                 int line);
+#endif
 
 int StackCtor(stack_t* stk);
 
@@ -77,13 +84,15 @@ int StackPush(stack_t* stk, elem_t elem);
 
 elem_t StackPop(stack_t* stk);
 
+#if STACK_MODE >= HASH_MODE
 UnsignedLL CalculateGNUHash(void* start_ptr, size_t num_bytes);
 
 static int UpdateHash(stack_t* stk);
+#endif
 
 int CheckLeftCannary  (stack_t* stk);
 
 int CheckRightCannary (stack_t* stk);
 
 
-#endif
+#endif // guard
