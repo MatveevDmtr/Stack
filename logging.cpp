@@ -24,10 +24,19 @@ FILE* open_log()
 
 void close_log()
 {
-    fprintf(LOG_FILE, "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
-                        "--------------------Finish program--------------------");
+    if (LOG_FILE == NULL)
+    {
+        fprintf(stderr, "ERROR: log file not found while closing\n");
+    }
+    else
+    {
+        fprintf(LOG_FILE, "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"
+                            "--------------------Finish program--------------------");
 
-    fclose(LOG_FILE);
+        fclose(LOG_FILE);
+
+        LOG_FILE = NULL;
+    }
 }
 
 int fprintf_log(size_t mode, const char* text, ...)

@@ -13,17 +13,5 @@
     }                                                      \
 }
 
-#define StructStackInit(name)                              \
-        StructureStackInit(#name,                          \
-                           __PRETTY_FUNCTION__,            \
-                           __FILE__,                       \
-                           __LINE__);
-
-
-#define StackDump(stk);                                    \
-        FuckingDump(stk,                                   \
-                    __PRETTY_FUNCTION__,                   \
-                    __FILE__,                              \
-                    __LINE__);
 
 #endif

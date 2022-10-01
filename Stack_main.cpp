@@ -6,13 +6,14 @@
 #include "logging.h"
 #include "stack.h"
 #include "StackConfig.h"
-#include "macroses.h"
 #include "GetPoison.h"
 #include "specificators.h"
 
 #define HASH 1
 #define CANARY 1
 #define VERIFIER 0
+
+const int INT_CONST = 300;
 
 const int MIN_LEN_STACK = 10;
 
@@ -34,12 +35,12 @@ enum ERRCODES
      CAPPOISONED        , // 7
      LBIRDSTACK         , // 8
      RBIRDSTACK         , // 9
-     LBIRDSTACKNULLPTR  , // 10
-     RBIRDSTACKNULLPTR  , // 11
+     LBIRD_STACK_NULLPTR, // 10
+     RBIRD_STACK_NULLPTR, // 11
      LBIRDSTRUCT        , // 12
      RBIRDSTRUCT        , // 13
-     INVSTACKHASH       , // 14
-     INVSTRUCTHASH      , // 15
+     INV_STACK_HASH     , // 14
+     INV_STRUCT_HASH    , // 15
      FILEERROR          , // 16
      DEBUGINFOERROR     , // 17
      REALLOCERROR       , // 18
@@ -147,14 +148,14 @@ UnsignedLL FindErrors(stack_t* stk)
     if (stk->PtrStackLeftBird   == NULL ||
         stk->PtrStackLeftBird   == getPoison(stk->PtrStackLeftBird))
     {
-                                                        sum_errcodes += 1 << LBIRDSTACKNULLPTR;
+                                                        sum_errcodes += 1 << LBIRD_STACK_NULLPTR;
     }
     else if (*stk->PtrStackLeftBird  != LEFT_CANNARY)   sum_errcodes += 1 << LBIRDSTACK;
 
     if (stk->PtrStackRightBird  == NULL ||
         stk->PtrStackRightBird  == getPoison(stk->PtrStackRightBird))
     {
-                                                        sum_errcodes += 1 << RBIRDSTACKNULLPTR;
+                                                        sum_errcodes += 1 << RBIRD_STACK_NULLPTR;
     }
     else if (*stk->PtrStackRightBird != RIGHT_CANNARY)  sum_errcodes += 1 << RBIRDSTACK;
 
@@ -167,7 +168,7 @@ UnsignedLL FindErrors(stack_t* stk)
 
         if (stack_hash_sum != stk->StackHashSum)
         {
-            sum_errcodes += 1 << INVSTACKHASH;
+            sum_errcodes += 1 << INV_STACK_HASH;
         }
         if (!stack_hash_sum)
         {
@@ -183,7 +184,7 @@ UnsignedLL FindErrors(stack_t* stk)
 
     if (struct_hash_sum != prev_struct_hash_sum)
     {
-        sum_errcodes += 1 << INVSTRUCTHASH;
+        sum_errcodes += 1 << INV_STRUCT_HASH;
     }
 
     if (struct_hash_sum > 0)
@@ -248,10 +249,6 @@ int LogCritError(int errcode, const char* func, int line)
             print_crit_errors("POINTER ERROR: Invalid Stack Pointer (pointer to buffer)", func, line);
             break;
 
-        case NEGSIZE:
-            print_crit_errors("SIZE ERROR: Stack Size has a Negative Value", func, line);
-            break;
-
         case SIZEPOISONED:
             print_crit_errors("SIZE ERROR: Stack Size is poisoned", func, line);
             break;
@@ -272,11 +269,11 @@ int LogCritError(int errcode, const char* func, int line)
             print_crit_errors("CANNARY ERROR: Right Stack Cannary is invalid", func, line);
             break;
 
-        case LBIRDSTACKNULLPTR:
+        case LBIRD_STACK_NULLPTR:
             print_crit_errors("CANNARY ERROR: Ptr to Left Stack Cannary is invalid", func, line);
             break;
 
-        case RBIRDSTACKNULLPTR:
+        case RBIRD_STACK_NULLPTR:
             print_crit_errors("CANNARY ERROR: Ptr to Right Stack Cannary is invalid", func, line);
             break;
 
@@ -288,11 +285,11 @@ int LogCritError(int errcode, const char* func, int line)
             print_crit_errors("CANNARY ERROR: Right Structure Cannary is invalid", func, line);
             break;
 
-        case INVSTACKHASH:
+        case INV_STACK_HASH:
             print_crit_errors("HASH ERROR: Stack HashSum is invalid", func, line);
             break;
 
-        case INVSTRUCTHASH:
+        case INV_STRUCT_HASH:
             print_crit_errors("HASH ERROR: Structure HashSum is invalid", func, line);
             break;
 
@@ -386,7 +383,7 @@ int FuckingDump(stack_t* stk,
     if (stk->PtrStackLeftBird   == NULL ||
         stk->PtrStackLeftBird   == getPoison(stk->PtrStackLeftBird))
     {
-        LogError(LBIRDSTACKNULLPTR);
+        LogError(LBIRD_STACK_NULLPTR);
     }
     else if (*stk->PtrStackLeftBird  != LEFT_CANNARY)
     {
@@ -398,7 +395,7 @@ int FuckingDump(stack_t* stk,
     if (stk->PtrStackRightBird  == NULL ||
         stk->PtrStackRightBird  == getPoison(stk->PtrStackRightBird))
     {
-        LogError(RBIRDSTACKNULLPTR);
+        LogError(RBIRD_STACK_NULLPTR);
     }
     else if (*stk->PtrStackRightBird != RIGHT_CANNARY)
     {
@@ -453,15 +450,36 @@ int FuckingDump(stack_t* stk,
 
     size_t numbers_in_capacity = (size_t) ceil(log10 ((double) stk->Capacity));
 
+    elem_t curr_elem = 0;
+
     const char* specif1 = specificator1(stk->Ptr[0]);
     const char* specif2 = specificator2(stk->Ptr[0]);
 
+    const char* null_specif1 = specificator1(INT_CONST);
+    const char* null_specif2 = specificator2(INT_CONST);
+
     for (size_t i = 0; i < stk->Capacity; i++)
     {
+        curr_elem = (stk->Ptr)[i];
+
         log("\t data[%0*d] = ", numbers_in_capacity, i);
-        log(specif2, (stk->Ptr)[i]);
-        log(" = ");
-        log(specif1, (stk->Ptr)[i]);
+
+        if (curr_elem != NULL)
+        {
+            log(specif1, curr_elem);
+            log(" = ");
+            log(specif2, curr_elem);
+        }
+        else
+        {
+            log(null_specif1, curr_elem);
+            log(" = ");
+            log(null_specif2, curr_elem);
+        }
+        if (curr_elem == getPoison(curr_elem))
+        {
+            log(" (POISONED)");
+        }
         log("\n");
     }
 
@@ -513,7 +531,7 @@ static int StackResize(stack_t* stk, size_t new_capacity)
     {
         log("Trying to Resize an invalid stack\n");
 
-        return getPoison(300);
+        return getPoison(INT_CONST);
     }
 
     log("new capacity: %d\n", new_capacity);
@@ -615,7 +633,7 @@ int StackDtor(stack_t* stk)
     {
         log("Trying to Destruct an invalid stack\n");
 
-        return getPoison(300);
+        return getPoison(INT_CONST);
     }
 
     elem_t poison_for_buf = getPoison(stk->Ptr[0]);
@@ -643,7 +661,7 @@ int StackDtor(stack_t* stk)
 
     *stk->PtrStackRightBird = getPoison(*stk->PtrStackRightBird);
 
-    free(stk->Ptr); //should free struct?
+    free(stk->Ptr);
 
     return 0;
 }
@@ -654,7 +672,7 @@ int StackPush(stack_t* stk, elem_t elem)
     {
         log("Trying to Push to an invalid stack\n");
 
-        return getPoison(300);
+        return getPoison(INT_CONST);
     }
 
     if (stk->Size >= stk->Capacity)

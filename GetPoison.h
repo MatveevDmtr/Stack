@@ -4,6 +4,10 @@
 #include "logging.h"
 #include "StackConfig.h"
 
+
+const size_t BAAD_FOOD = 0xBAADF00D;
+
+
 //start prototypes
 stack_t* getPoison (stack_t* /* value */);
 
@@ -33,19 +37,21 @@ unsigned long long getPoison (unsigned long long /* value */);
 //finish prototypes
 
 
+// const bad food
+
 stack_t* getPoison (stack_t* /* value */)
 {
-    return (stack_t*) 0xBAADF00D;
+    return (stack_t*) BAAD_FOOD;
 }
 
 int getPoison (int /* value */)
 {
-    return 0xBAADF00D;
+    return (int) BAAD_FOOD;
 }
 
 size_t getPoison (size_t /* value */)
 {
-    return 0xBAADF00D;
+    return (size_t) BAAD_FOOD;
 }
 
 float getPoison (float /* value */)
@@ -60,42 +66,42 @@ double getPoison (double /* value */)
 
 char getPoison (char /* value */)
 {
-    return 'z' + 1;
+    return (char) 1;
 }
 
 char* getPoison (char* /* value */)
 {
-    return (char*)0xBAADF00D;
+    return (char*)BAAD_FOOD;
 }
 
 int* getPoison (int* /* value */)
 {
-    return (int*)0xBAADF00D;
+    return (int*)BAAD_FOOD;
 }
 
 double* getPoison (double* /* value */)
 {
-    return (double*)0xBAADF00D;
+    return (double*)BAAD_FOOD;
 }
 
 char** getPoison (char** /* value */)
 {
-    return (char**)0xBAADF00D;
+    return (char**)BAAD_FOOD;
 }
 
 void* getPoison (void* /* value */)
 {
-    return (void*)0xBAADF00D;
+    return (void*)BAAD_FOOD;
 }
 
 unsigned long long* getPoison (unsigned long long* /* value */)
 {
-    return (unsigned long long*)0xBAADF00D;
+    return (unsigned long long*)BAAD_FOOD;
 }
 
 unsigned long long getPoison (unsigned long long /* value */)
 {
-    return (unsigned long long)0xBAADF00D;
+    return (unsigned long long)BAAD_FOOD;
 }
 
 #endif

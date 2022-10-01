@@ -5,6 +5,20 @@
 
 // two headers: interface internal
 
+#define StructStackInit(name)                              \
+        StructureStackInit(#name,                          \
+                           __PRETTY_FUNCTION__,            \
+                           __FILE__,                       \
+                           __LINE__);
+
+
+#define StackDump(stk);                                    \
+        FuckingDump(stk,                                   \
+                    __PRETTY_FUNCTION__,                   \
+                    __FILE__,                              \
+                    __LINE__);
+
+
 typedef unsigned long long UnsignedLL;
 
 typedef unsigned long long bird_t;
@@ -18,8 +32,8 @@ typedef struct stack_info
     bool               DeadInside;
     bird_t*            PtrStackLeftBird;
     bird_t*            PtrStackRightBird;
-    UnsignedLL                StackHashSum;
-    UnsignedLL                StructHashSum;
+    UnsignedLL         StackHashSum;
+    UnsignedLL         StructHashSum;
 
     struct  calling_inf
     {
